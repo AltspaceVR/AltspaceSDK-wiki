@@ -1,0 +1,1 @@
+* Ability to see more debug info from altspace (which objects are in the hierarchy, do they have anything displayed, what things are actually loaded).
