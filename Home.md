@@ -1,5 +1,9 @@
 Welcome to the AltspaceSDK wiki!
 
-[[Feature Requests]]
-[[Known Issues]]
-[[Resources]]
+Table of Contents:
+* [[Resources]]
+* [[Feature Requests]]
+* [[Known Issues]]
+
+Coming Soon:
+* FAQ
