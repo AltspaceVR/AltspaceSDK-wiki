@@ -1,3 +1,4 @@
-# Known Issues
+## Limitations of Web Apps in Altspace Browser
 
-(placeholder page)
+* new tabs / pages not supported
+* cannot print / download
