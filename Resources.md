@@ -14,6 +14,12 @@ Links to useful online resources.
     * [Learning Three.js], [Three.js Cookbook], and [Three.js Essentials] by Jos Dirksen
     * [Three.js: Questions and Answers], compiled from [Stack Overflow: Three.js]  
 
+## Audio and Visual Assets
+* 3D Models: [TurboSquid], [TF3DM], [SketchFab]
+* 3D model format converter: [greentoken]
+* Audio Clips, Sound Effects: [FreeSound.org]
+* Audio format converter: [online-convert]
+
 [REFERENCE-STYLE LINK DEFINITIONS FOLLOW]:dummylink
 [Official Three.js Docs]: http://threejs.org/docs/index.html#Manual/Introduction/Creating_a_scene
 [Official Three.js Wiki]: https://github.com/mrdoob/three.js/wiki/Getting-Started
@@ -31,3 +37,10 @@ Links to useful online resources.
 [Three.js Essentials]: http://www.amazon.com/Three-js-Essentials-Jos-Dirksen/dp/1783980869
 [Three.js: Questions and Answers]: http://www.amazon.com/Three-JS-Questions-Answers-George-Duckett-ebook/dp/B00RY7MCKS#
 [Stack Overflow: Three.js]: http://stackoverflow.com/questions/tagged/three.js
+
+[greentoken]: http://www.greentoken.de/onlineconv/
+[online-convert]: http://www.online-convert.com/
+[FreeSound.org]: http://www.freesound.org/
+[TurboSquid]: http://www.turbosquid.com/
+[TF3DM]: http://tf3dm.com/
+[SketchFab]: https://sketchfab.com/models?features=downloadable
