@@ -29,9 +29,22 @@ Like the AltOBJMTLLoader and AltRenderer instances, the CursorEvents instance is
 Methods:
 * constructor: **CursorEvents**()
 * **add**( object ): register the object to receive cursor events
-* **enableMouseEvents**( camera ): create an instance of AltObjectControls to map mouse events to Altspace cursor events.
+    * then attach event listeners to the object, for example:
+    * object.**addEventListener**( "holocursordown", callback );
+    * in addition to attaching event listeners directly, use pre-defined CursorEffects
+* **enableEffects**(): create an internal instance of CursorEffects (see below)
 * **addEffect**( object, effect ): register the cursor effect you want to use, and the object to which you want it to be applied.  
+* **enableMouseEvents**( camera ): create an internal instance of AltObjectControls (see below)
 * **update**(): update the CursorEffects and AltObjectControls instances; call every frame in your animation loop.
+
+Cursor events
+* **holocursordown**: similar to mousedown, such as mouse-click-down while cursor is over a hologram
+* **holocursorup**: similar to mouseup, such as mouse-click-release 
+* **holocursorenter**: similar to hoverOver, such as cursor initially lands on a hologram
+* **holocursorleave**: similar to hoverOut, such as cursor stops landing on a hologram
+* **holocursormove**: similar to mousemove**
+
+**Unlike the other events, holocursormove is not tied to a specific hologram.  To receive this event provide a default target in the CursorEvents constructor. (Alternatively, add listeners for cursor events directly to the global window element.)
 
 ### CursorEffects
 CursorEffects works with CursorEvents and makes it easier to reuse event handling code.  For simple interactions, like a change-object-color hover effect, this might not be necessary, but for more complicated interactions like drag-and-drop it can be useful to isolate this logic in a separate file, instead of putting it inline with the rest of your application.  Using this modular approach also lets you reuse effects, either created by you for another app, or by other developers in your organization or in the Altspace developer community.
@@ -40,9 +53,9 @@ In most cases you will not create the CursorEffects instance or call its methods
 
 The Altspace SDK includes these effects:
 
-* **ColorHighlightEffect** - Simple effect that changes the color of an object on hoverOver, and reverts back to the original color on hoverOut.  You can select the highlight color by passing it as an argument to the constructor, if not a default highlight color is used.
+* **ColorHighlightEffect** - Simple effect that changes the color of an object on "hover over", and reverts back to the original color on "hover out" (holocursorenter / holocursorleave events).  You can select the highlight color by passing it as an argument to the constructor, if not a default highlight color is used.
     * ColorHoverEffect( new THREE.Color(0, 1, 1) )
-* **DragEffect** - A more complicated effect that implements drag-and-drop of objects.  Currently the drag movement is limited to an x-z plane parallel to the floor (since it was originally developed for a chess game). You can select a drag plane (THREE.Mesh with BoxGeometry) by passing it as parameter to the constructor, if not a default one will be created for you. You can also include the firebaseSync instance, if you want to sync an object after its position changes due to a drag.
+* **DragEffect** - A more complicated effect that implements drag-and-drop of objects. Click once to start drag, click again to release (holocursorup / holocursordown events).  Currently the drag movement is limited to an x-z plane parallel to the floor (since it was originally developed for a chess game). You can select a drag plane (THREE.Mesh with BoxGeometry) by passing it as parameter to the constructor, if not a default one will be created for you. You can also include the firebaseSync instance, if you want to sync an object after its position changes due to a drag.
     * var params = { dragPlane: myMeshBoxGeometry, firebaseSync: firebaseSync };
     * new DragPlaneEffect( params );
 
