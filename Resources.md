@@ -20,6 +20,10 @@ Links to useful online resources.
 * Audio Clips, Sound Effects: [FreeSound.org]
 * Audio format converter: [online-convert]
 
+## Related Work
+* [VoodooJS] - JS framework for mixing 2D and 3D content.
+* [SceneVR] - Create Virtual Reality scenes with markup + Javascript.
+
 [REFERENCE-STYLE LINK DEFINITIONS FOLLOW]:dummylink
 [Official Three.js Docs]: http://threejs.org/docs/index.html#Manual/Introduction/Creating_a_scene
 [Official Three.js Wiki]: https://github.com/mrdoob/three.js/wiki/Getting-Started
@@ -44,3 +48,6 @@ Links to useful online resources.
 [TurboSquid]: http://www.turbosquid.com/
 [TF3DM]: http://tf3dm.com/
 [SketchFab]: https://sketchfab.com/models?features=downloadable
+
+[VoodooJS]: http://www.voodoojs.com/
+[SceneVR]: http://www.scenevr.com/
