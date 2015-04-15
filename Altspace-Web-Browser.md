@@ -8,6 +8,8 @@ An **Altspace Web App** runs inside the AltspaceVR environment and utilizes APIs
 
 **Compositions** are the term we use for apps / games / videos / documents / images / sounds. Basically anything you would hit via a url and want to experience in altspace. (Think html ‘document’ or file).  **Enclosures** define a space where compositions can live, their dimensions in css pixels, and their scale. (Think ‘window’)  The reason we need new terminology is because compositions can contain 3D objects that are rendered in the virtual environment, unlike traditional web pages which are displayed on a 2D plane.
 
+**Altspace Cursor** is that small blue dot that moves when you move your mouse.  Note that it moves in three dimensions, unlike a traditional mouse which only moves in the x,y plane. The two-dimensional mouse movements must be translated into the three-dimensional world-space, and this is done using raycast, like in typical 3D video games or other virtual environments. The origin of the ray is the player’s eye, a.k.a camera position, and the direction changes as the mouse moves. When the ray intersects an in-game object, the cursor is placed at the intersection point. 
+
 Differences from traditional browsers:
 * ‘css pixels’ are not actual pixels, but units
 * ‘css pixel’ = px in any <length> definition (like width)
