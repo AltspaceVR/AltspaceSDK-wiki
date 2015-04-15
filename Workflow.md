@@ -5,11 +5,13 @@ This page describes the typical workflow for developing an Altspace Web App.
 Hardware Requirements
 * Oculus Rift DK2 (for VR mode; developing in non-VR mode also supported)
 * Windows or Mac laptop or desktop computer
+  * lastest version of OS (Windows 8.1, OS X Yosemite) recommended
 * Dedicated GPU (for high-performance graphics)
 
 Note the above requirements are for developing Altspace apps, not for simply running Altspace, which can be done on computers without a dedicated GPU.  The additional graphics power is needed when developing apps since you will also be running additional debugging tools, described below. (Integrated graphics *may* work, although not officially supported.)
 
 Some hardware platforms successfully used for bulding Altspace Apps:
+* Custom Gaming Desktop (i7/R9 200)
 * Asus ROG G751 17" laptop (i7/GTX 980M)
 * Lenovo Y50 15" laptop (i7/GTX 860M)
 * Alienware 13" laptop (i5/GTX 860M)
