@@ -14,7 +14,8 @@ Things to try if your app doesn't seem to be working. (For issues installing or 
 
 4. Check the Altspace **client output log**, a file on your computer at the path below:
     * Windows: c:\Users\MyUsername\AppData\Local\AltspaceVR\AltspaceVR_Data\output_log
-    * Mac: TBD
+    * Mac: ~/Library/Logs/Unity/Player.log ([How To View the Library Folder])
 
 [AltspaceVR Troubleshooting Guide]: https://altvr.zendesk.com
+[How To View the Library Folder]: http://www.macworld.com/article/2057221/how-to-view-the-library-folder-in-mavericks.html
 
