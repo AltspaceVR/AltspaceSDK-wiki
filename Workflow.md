@@ -14,17 +14,18 @@ Some hardware platforms successfully used for bulding Altspace Apps:
 * Alienware 13" laptop (i5/GTX 860M)
 
 Required Software:
-* [AltspaceVR client]: executable; note that access to Altspace client source code is not required.
-* [Prepros]: Web development tool with integratd web server and automatical page reloading.
-* [Sublime Text Editor]: Recommended, but you can use any editor or IDE that supports Javascript.
-* Coherent Debugger: Allows you to see the console output of your Altspace web app (download link?)
+* [AltspaceVR client]: executable; access to Altspace client source code is not required.
+* [Prepros]: Web dev tool with integratd web server and automatical page reloading.
+* [Sublime Text Editor]: Recommended; use any editor or IDE that supports Javascript.
+* Coherent Debugger: Allows you to see the console output of your Altspace web app
+    * TBD: download link?
     * on Mac: cannot rename it from Debugger.app after you extract it, or it won't run
-    * due to its reliance on legacy .app bundle structure -- it needs an Info.plist with metadata.
-* [GitHub Client]: A command-line client (Windows users: consider [Cygwin]) or a GUI of your choice. 
+    * due to legacy .app bundle structure -- it needs an Info.plist with metadata.
+* [GitHub Client]: any command-line (Windows users: consider [Cygwin]) or a GUI client. 
 
 Required Accounts:
-* [GitHub]: Web-based source code management. Account required for full access to this SDK.
-* [Firebase]: Cloud database used by the SDK. Sign up for free account, no download needed. 
+* [GitHub]: Web-based version control. Account required for access to this SDK.
+* [Firebase]: Cloud database used by the SDK. Sign up for a free account. 
 
 [AltspaceVR client]: http://account.altspacevr.com
 [Firebase]: http://firebase.com
