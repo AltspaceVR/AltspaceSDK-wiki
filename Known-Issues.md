@@ -14,6 +14,7 @@
 * No dynamic or modified meshes, dynamic or modified materials, or custom shaders.
 * No screen space effects, point clouds, or particle effects, or other tricky stuff.
 * Cannot hide objects once added to the scene, or have transparent objects.
+* Physic reps are not exact (object aligned cuboids, 80% the size of a bounding box)
 
 
 [1]: https://chromium.googlesource.com/chromiumos/manifest-versions/+/master/paladin/buildspecs/
