@@ -15,7 +15,7 @@ Table of Contents:
     * [[Resources]] - Links to online Three.js tutorials, 3D model libraries, and more.
 
 * Feedback
-    * [[Known Issues]] - Existing limitations/problems. Check BEFORE creating new issues.
+    * [[Known Issues]] - Existing limitations. Check BEFORE creating new issues.
     * [[Feature Requests]] - What would make this excellent SDK *even better?*  
     * [[Wish List]] - For longer-term roadmap suggestions or big-picture topics.
 
