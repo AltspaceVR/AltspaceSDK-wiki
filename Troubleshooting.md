@@ -1,5 +1,5 @@
 ## General Tips
-Things to try if your app doesn't seem to be working.
+Things to try if your app doesn't seem to be working. (For issues installing or running the AltspaceVR Client, see the [AltspaceVR Troubleshooting Guide].)
 
 1. **RTFM**
    * Reading this entire wiki will take most developers less than 10 minutes
@@ -15,4 +15,6 @@ Things to try if your app doesn't seem to be working.
 4. Check the Altspace **client output log**, a file on your computer at the path below:
     * Windows: c:\Users\MyUsername\AppData\Local\AltspaceVR\AltspaceVR_Data\output_log
     * Mac: TBD
+
+[AltspaceVR Troubleshooting Guide]: https://altvr.zendesk.com
 
