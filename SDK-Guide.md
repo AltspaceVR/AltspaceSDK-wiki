@@ -21,8 +21,8 @@ The current components of the SDK are as follows.
 In order for an object to appear in Altspace, it must be loaded by your app using the AltOBJMTLLoader.  The object geometry and materials are defined by the OBJ and MTL files (which are assumed to have the same basenames).  The loader parses these two ASCII text files and creates a ThreeJS object.  Finally, it attaches a special attribute  that notifies the AtlRender that this object corresponds to a hologram in Altspace, and thus should be included in the serialized scene passed to the Unity engine.  
 
 Methods:
-* constructor: **THREE.AltOBJMTLLoader**()
-* **load**(filename, onLoadCallback): Imports the OBJ file at filename, and envokes onLoadCallback when done.
+* `new THREE.AltOBJMTLLoader()`: called to create the singleton used to load multiple objects.
+* `load(filename, onLoadCallback)`: Imports the OBJ file at filename, and envokes onLoadCallback when done.
 
 Note that loading a model can take a half-second, and you will probably want to wait until all needed objects are loaded before continuing with your app initialization, for example by using an interval timer.
 
@@ -30,8 +30,8 @@ Note that loading a model can take a half-second, and you will probably want to 
 The AltRender forms the link between the ThreeJS scene and the Altspace virtual world.  It packages all the necessary data about the scene, including the position, rotation, scale, and source URL of all objects.  Instead of using the WebGLRenderer, as you would for existing ThreeJS apps, in Altspace you will want to use the AltRender.  
 
 Methods:
-* constructor: **THREE.AltRenderer**(), called during scene initialization.
-* **render**( scene ): Render the scene; call every frame in your animation loop (via requestAnimationFrame).
+* `new THREE.AltRenderer()`: called during scene initialization to create the singleton.
+* `render( scene )`: Render the scene; call every frame in your animation loop (via requestAnimationFrame).
 
 Note that AltRender constructor requires only the scene, since the camera is managed by Altspace, unlike the WebGLRenderer constructor that takes the scene and camera as arguments.   Note also that render is the only method currently supported, so you should avoid calling setSize, setClearColor, or other methods when using the AltRender.  If you only plan to run and develop your app inside Altspace, this is the only renderer you need. If you want your app to run in traditional web browsers as well,you will need to detect which environment is present and create the correct renderer.  
 
@@ -41,24 +41,24 @@ CursorEvents dispatches Altspace Cursor API events directly to the target object
 Like the AltOBJMTLLoader and AltRenderer instances, the CursorEvents instance is typically a singleton within your app.  It can also manage the CursorEffects and AltObjectController singletons, described in following sections.
 
 Methods:
-* constructor: **CursorEvents**()
-* **add**( object ): register the object to receive cursor events
+* `new CursorEvents()`: constructor
+* `add( object )`: register the object to receive cursor events
     * then attach event listeners to the object, for example:
-    * object.**addEventListener**( "holocursordown", callback );
+    * `object.addEventListener( "holocursordown", callback )`;
     * in addition to attaching event listeners directly, use pre-defined CursorEffects
-* **enableEffects**(): create an internal instance of CursorEffects (see below)
-* **addEffect**( object, effect ): register the cursor effect you want to use, and the object to which you want it to be applied.  
-* **enableMouseEvents**( camera ): create an internal instance of AltObjectControls (see below)
-* **update**(): update the CursorEffects and AltObjectControls instances; call every frame in your animation loop.
+* `enableEffects()`: create an internal instance of CursorEffects (see below)
+* `addEffect( object, effect )`: register the cursor effect you want to use, and the object to which you want it to be applied.  
+* `enableMouseEvents( camera )`: create an internal instance of AltObjectControls (see below)
+* `update()`: update the CursorEffects and AltObjectControls instances; call every frame in your animation loop.
 
 Cursor events
-* **holocursordown**: similar to mousedown, such as mouse-click-down while cursor is over a hologram
-* **holocursorup**: similar to mouseup, such as mouse-click-release 
-* **holocursorenter**: similar to hoverOver, such as cursor initially lands on a hologram
-* **holocursorleave**: similar to hoverOut, such as cursor stops landing on a hologram
+* **holocursordown**: similar to mousedown, but only fired when cursor is over a hologram
+* **holocursorup**: similar to mouseup, but only fired when cursor is over a hologram
+* **holocursorenter**: similar to hoverOver, fired when cursor initially lands on a hologram
+* **holocursorleave**: similar to hoverOut, fired when cursor stops landing on a hologram
 * **holocursormove**: similar to mousemove**
 
-**Unlike the other events, holocursormove is not tied to a specific hologram.  To receive this event provide a default target in the CursorEvents constructor. (Alternatively, add listeners for cursor events directly to the global window element.)
+**Unlike the other events, holocursormove is not tied to a specific hologram.  To receive this event provide a default target in the CursorEvents constructor. You can also add listeners for cursor events directly to the global window element, such as `window.addEventListener( "holocursormove", callback )`
 
 ### CursorEffects
 CursorEffects works with CursorEvents and makes it easier to reuse event handling code.  For simple interactions, like a change-object-color hover effect, this might not be necessary, but for more complicated interactions like drag-and-drop it can be useful to isolate this logic in a separate file, instead of putting it inline with the rest of your application.  Using this modular approach also lets you reuse effects, either created by you for another app, or by other developers in your organization or in the Altspace developer community.
@@ -68,10 +68,10 @@ In most cases you will not create the CursorEffects instance or call its methods
 The Altspace SDK includes these effects:
 
 * **ColorHighlightEffect** - Simple effect that changes the color of an object on "hover over", and reverts back to the original color on "hover out" (holocursorenter / holocursorleave events).  You can select the highlight color by passing it as an argument to the constructor, if not a default highlight color is used.
-    * ColorHoverEffect( new THREE.Color(0, 1, 1) )
+    * `ColorHoverEffect( new THREE.Color(0, 1, 1) )`
 * **DragEffect** - A more complicated effect that implements drag-and-drop of objects. Click once to start drag, click again to release (holocursorup / holocursordown events).  Currently the drag movement is limited to an x-z plane parallel to the floor. You can select a drag plane (THREE.Mesh with BoxGeometry) by passing it as parameter to the constructor, if not a default one will be created for you. You can also include the firebaseSync instance, if you want to sync an object after its position changes due to a drag.
-    * var params = { dragPlane: myMeshBoxGeometry, firebaseSync: firebaseSync };
-    * new DragPlaneEffect( params );
+    * `var params = { dragPlane: myMeshBoxGeometry, firebaseSync: firebaseSync };`
+    * `new DragPlaneEffect( params );`
 
 
 ### AltObjectControls
@@ -83,13 +83,13 @@ FirebaseSync synchronizes the positions of objects across the network. If one us
 FirebaseSync implements the concept of a **room**, so that multiple instances of your app can be running simultaneously, each with its own set of objects.  You can specify the “room=roomX” parameter in your app URL, where X in an integer, or if you omit it a new room will be created.
 
 Methods:
-* constructor: **FirebaseSync**( firebaseRootUrl, appId )
+* `new FirebaseSync( firebaseRootUrl, appId )`: create the singleton (but do not connect yet)
     * firebaseRootUrl example: "https://your-firebase-root.firebaseio.com/"
     * appId example: "Your-App-Name" 
     * app url will be: "https://your-firebase-root.firebaseio.com/Your-App-Name"
-* **add**( object ): Call for all objects (THREE.Object3D) that you want to get synchronized
-* **connect**(): connect to the remote server and synchronize initial object states.  
-* **saveObject**( object ): save current state of object and broadcast to all other clients.
+* `add( object )`: Call for all objects (THREE.Object3D) that you want to get synchronized
+* `connect()`: connect to the remote server and synchronize initial object states.  
+* `saveObject( object )`: save current state of object and broadcast to all other clients.
 
 Currently you must call add() for all objects before calling connect(), as new synced objects can only be created during the initialization phase, and not while your app is running.  (We plan to remove this limitation soon)
 
