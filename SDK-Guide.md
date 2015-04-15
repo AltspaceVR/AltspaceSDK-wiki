@@ -9,12 +9,11 @@ The current components of the SDK are as follows.
 * Cursor: 
   * CursorEvents
   * CursorEffects
-  * ColorHighlightEffect
-  * DragPlaneEffect
   * AltObjectControls
 * Sync: 
   * FirebaseSync
 
+In addition, we provide optional [[Cursor Effect Plugins]].
 
 
 ### AltOBJMTLLoader
@@ -52,30 +51,23 @@ Methods:
 * `update()`: update the CursorEffects and AltObjectControls instances; call every frame in your animation loop.
 
 Cursor events
-* **holocursordown**: similar to mousedown, but only fired when cursor is over a hologram
-* **holocursorup**: similar to mouseup, but only fired when cursor is over a hologram
-* **holocursorenter**: similar to hoverOver, fired when cursor initially lands on a hologram
-* **holocursorleave**: similar to hoverOut, fired when cursor stops landing on a hologram
-* **holocursormove**: similar to mousemove**
+* holocursordown: similar to mousedown, but only fired when cursor is over a hologram
+* holocursorup: similar to mouseup, but only fired when cursor is over a hologram
+* holocursorenter: similar to hoverOver, fired when cursor initially lands on a hologram
+* holocursorleave: similar to hoverOut, fired when cursor stops landing on a hologram
+* holocursormove: similar to mousemove**
 
 **Unlike the other events, holocursormove is not tied to a specific hologram.  To receive this event provide a default target in the CursorEvents constructor. You can also add listeners for cursor events directly to the global window element, such as `window.addEventListener( "holocursormove", callback )`
 
 ### CursorEffects
 CursorEffects works with CursorEvents and makes it easier to reuse event handling code.  For simple interactions, like a change-object-color hover effect, this might not be necessary, but for more complicated interactions like drag-and-drop it can be useful to isolate this logic in a separate file, instead of putting it inline with the rest of your application.  Using this modular approach also lets you reuse effects, either created by you for another app, or by other developers in your organization or in the Altspace developer community.
 
-In most cases you will not create the CursorEffects instance or call its methods directly, as it is managed by the CursorEvents (see above).  The key method is CursorEvents.addEffect(object, effect). You can have multiple effects added to the same object, and multiple objects that are registered for the same effect (many-to-many relationship). 
+In most cases you will not create the CursorEffects instance or call its methods directly, as it is managed by the CursorEvents (see above).  The key method is `CursorEvents.addEffect(object, effect)`. You can have multiple effects added to the same object, and multiple objects that are registered for the same effect (many-to-many relationship).  To create effects, simply implement the Cursor Event callbacks that your effect requires, or use pre-built effects which we call plugins.  
 
-The Altspace SDK includes these effects:
-
-* **ColorHighlightEffect** - Simple effect that changes the color of an object on "hover over", and reverts back to the original color on "hover out" (holocursorenter / holocursorleave events).  You can select the highlight color by passing it as an argument to the constructor, if not a default highlight color is used.
-    * `ColorHoverEffect( new THREE.Color(0, 1, 1) )`
-* **DragEffect** - A more complicated effect that implements drag-and-drop of objects. Click once to start drag, click again to release (holocursorup / holocursordown events).  Currently the drag movement is limited to an x-z plane parallel to the floor. You can select a drag plane (THREE.Mesh with BoxGeometry) by passing it as parameter to the constructor, if not a default one will be created for you. You can also include the firebaseSync instance, if you want to sync an object after its position changes due to a drag.
-    * `var params = { dragPlane: myMeshBoxGeometry, firebaseSync: firebaseSync };`
-    * `new DragPlaneEffect( params );`
-
+See the [[Cursor Effect Plugins]] page for effect plugins included with this SDK.
 
 ### AltObjectControls
-AltObjectControls extends [ObjectControls], an open-source library for interacting with ThreeJS objects using a mouse or other input device, to work with Altspace cursor events. The advantage of using AltObjectControls is your app will respond appropriately to both cursor events when running in Altspace and mouse events when running the web browser.  Typically you will not create the AltObjectControls instance or call its methods directly, as it is managed by the CursorEvents (see above). The key method is CursorEvents.enableMouseEvents(). 
+AltObjectControls extends [ObjectControls], an open-source library for interacting with ThreeJS objects using a mouse or other input device, to work with Altspace cursor events. The advantage of using AltObjectControls is your app will respond appropriately to both cursor events when running in Altspace and mouse events when running the web browser.  Typically you will not create the AltObjectControls instance or call its methods directly, as it is managed by the CursorEvents (see above). The key method is `CursorEvents.enableMouseEvents()`. 
 
 ### FirebaseSync
 FirebaseSync synchronizes the positions of objects across the network. If one user moves a hologram, all other users in the room will see the object in the new position. This is currently done using the Firebase object database, so a  Firebase Account is required.  Sign up for free at Firebase.com and note your database URL, which is an argument to the FirebaseSync constructor.  
@@ -85,7 +77,7 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 Methods:
 * `new FirebaseSync( firebaseRootUrl, appId )`: create the singleton (but do not connect yet)
     * firebaseRootUrl example: "https://your-firebase-root.firebaseio.com/"
-    * appId example: "Your-App-Name" 
+    * appId example: "Your-App-Name"
     * app url will be: "https://your-firebase-root.firebaseio.com/Your-App-Name"
 * `add( object )`: Call for all objects (THREE.Object3D) that you want to get synchronized
 * `connect()`: connect to the remote server and synchronize initial object states.  
