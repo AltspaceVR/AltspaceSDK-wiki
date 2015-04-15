@@ -7,6 +7,12 @@
     * Please use only webaudio, if you use flash we will cry.
     * Your audio will sound like it is coming from the middle of your webpage.
     * In future releases: specialized audio elements for positional sound.
+* Traditional DOM is only in a single plane right now, cannot be put on 3d objects.
+* Cannot import Three.js scenes or lighting, animations, or cameras
+* No dynamic or modified meshes, dynamic or modified materials, or custom shaders.
+* No screen space effects, point clouds, or particle effects, or other tricky stuff.
+* Cannot hide objects once added to the scene, or have transparent objects.
+
 
 [1]: https://chromium.googlesource.com/chromiumos/manifest-versions/+/master/paladin/buildspecs/
 [2]: https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats
