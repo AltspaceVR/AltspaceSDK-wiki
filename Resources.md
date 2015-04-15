@@ -20,7 +20,8 @@ Links to useful online resources.
 * Audio Clips, Sound Effects: [FreeSound.org]
 * Audio format converter: [online-convert]
 
-## Related Work
+## Related Work / Cool Stuff
+* [WebGameLinks] - Things that are/could be cool in AltspaceVR
 * [VoodooJS] - JS framework for mixing 2D and 3D content.
 * [SceneVR] - Create Virtual Reality scenes with markup + Javascript.
 
@@ -51,3 +52,5 @@ Links to useful online resources.
 
 [VoodooJS]: http://www.voodoojs.com/
 [SceneVR]: http://www.scenevr.com/
+[WebGameLinks]: https://sites.google.com/a/altvr.com/webgamelinks/
+[Cymatic Bruce]: http://cymaticbruce.com/
