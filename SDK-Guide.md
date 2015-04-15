@@ -1,7 +1,21 @@
-The purpose of the Altspace Apps SDK is to help you more easily write cool games and other apps that run in Altspace.  This guide explains the features of the SDK. For a quick Getting Starting overview, see the [Repo README].
+The purpose of the Altspace Apps SDK is to help you more easily write cool games and other apps that run in Altspace.  This guide explains the features of the SDK.  Please see the [Repo README], which walks through building a sample app, before diving into the details below.
 
 ## SDK Components
-Below are the current components of the SDK.  AltRender and AltOBJMTLLoader are required by all Altspace Apps; others are optional.
+The current components of the SDK are as follows. 
+
+* Core: 
+  * AltOBJMTLLoader
+  * AltRenderer
+* Cursor: 
+  * CursorEvents
+  * CursorEffects
+  * ColorHighlightEffect
+  * DragPlaneEffect
+  * AltObjectControls
+* Sync: 
+  * FirebaseSync
+
+
 
 ### AltOBJMTLLoader
 In order for an object to appear in Altspace, it must be loaded by your app using the AltOBJMTLLoader.  The object geometry and materials are defined by the OBJ and MTL files (which are assumed to have the same basenames).  The loader parses these two ASCII text files and creates a ThreeJS object.  Finally, it attaches a special attribute  that notifies the AtlRender that this object corresponds to a hologram in Altspace, and thus should be included in the serialized scene passed to the Unity engine.  
