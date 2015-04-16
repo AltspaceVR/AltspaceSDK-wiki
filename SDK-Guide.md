@@ -1,7 +1,7 @@
-This guide explains the features of the Altspace Web App SDK.  (See also the [[Your First App]] tutorial.)
+This guide explains the features of the SDK.  (See also the [[Your First App]] tutorial.)
 
 ## SDK Components
-The current components of the SDK are as follows. 
+The current components of the Altspace Web App SDK are as follows. 
 
 * Core: 
   * AltOBJMTLLoader
