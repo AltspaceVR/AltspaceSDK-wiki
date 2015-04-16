@@ -1,4 +1,4 @@
-This is a more detailed walk-through of the app in the SDK repo [README] Getting Started section.
+This tutorial is a more detailed walk-through of the app in the SDK repo [README] Getting Started section.
 
 
 
