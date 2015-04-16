@@ -1,4 +1,4 @@
-This guide explains the features of the Altspace Web App SDK.  See the [Repo README], which walks through building a sample app, before diving into the details below.
+This guide explains the features of the Altspace Web App SDK.  (See also the [[Your First App]] tutorial.)
 
 ## SDK Components
 The current components of the SDK are as follows. 
