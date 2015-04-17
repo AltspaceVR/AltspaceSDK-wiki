@@ -10,7 +10,7 @@ Table of Contents:
     * [[Altspace Web Browser]] - intro to the custom browser that will run your apps
 
 * Tutorials
-    * [[Your First Altspace App]] - step-by-step tutorial of building an example app
+    * [[Your First Altspace App]] - get up and running with 30 lines of code
 
 * Tips for Developers
     * [[Workflow]] - suggesting development tools and best practices for building apps
