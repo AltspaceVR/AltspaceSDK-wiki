@@ -43,7 +43,7 @@ Next, create an HTML file with script import tags pointing to the SDK files.
 ```
 You can name the above file index.html, MyFirstApp.html, or whatever you like. The SDK does not require any particular directory structure or file naming.
 
-Below we use the canonical example of importing a cube model, which you can copy from the AltspaceSDK repo `examples` directory. 
+Below we use a cube model, available in the AltspaceSDK repo `examples` directory. 
 ```
 $ mkdir MyFirstApp/models
 $ cp AltspaceSDK/examples/spinning_cube/cube.obj MyFirstApp/models/
