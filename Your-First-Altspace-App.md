@@ -3,8 +3,6 @@ This tutorial takes you from checking out the SDK on GitHub to creating a simple
 When run in the [[Altspace Web Browser]], this app imports an object loaded from a 3D model file into the Altspace virtual reality environment. The final source code listing, which is **only 23 lines long** is shown at the end of this page.
 
 First clone or [download] the [AltspaceSDK Repo] from GitHub.
-
-(or use a GitHub GUI, command line shown here for brevity)
 ```
 $ git clone git@github.com:AltspaceVR/AltspaceSDK.git
 ```
