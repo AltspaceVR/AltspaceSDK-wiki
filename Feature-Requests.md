@@ -5,3 +5,4 @@
 * Spatialized audio tags
 * Better physics reps
 * Enable avatar collisions on selected holograms, so avatars cannot walk through and can climb onto them
+* Object animations (although OBJ format doesn't seem to support this)
