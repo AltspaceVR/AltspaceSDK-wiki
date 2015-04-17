@@ -2,8 +2,8 @@
 Things to try if your app doesn't seem to be working. (For issues installing or running the AltspaceVR Client, see the [AltspaceVR Troubleshooting Guide].)
 
 1. **RTFM**
-   * Reading this entire wiki will take most developers less than 10 minutes
-   * (fewer than 3,000 words at the average adult reading speed of 300 wpm)
+   * Reading this entire wiki will take most developers less than 20 minutes
+   * (fewer than 6,000 words at the average adult reading speed of 300 wpm)
 
 2. **Refresh** the Altspace Browser.
    * The required Prepros tool (see [[Workflow]]) should automatically trigger a reload when it detects a change in your source code files. If this isn't happening, try restarting the Prepros application.
