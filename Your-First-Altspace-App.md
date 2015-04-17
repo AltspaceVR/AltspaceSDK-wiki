@@ -1,4 +1,4 @@
-This tutorial takes you from checking out the SDK on GitHub to creating a simple app.  When run in the [[Altspace Web Browser]], this app imports an object loaded from a 3D model file into the Altspace virtual reality environment. The final source code listing, which is **only 30 lines long** is shown at the end of this page.
+This tutorial takes you from checking out the SDK on GitHub to creating a simple app.  When run in the [[Altspace Web Browser]], this app imports an object loaded from a 3D model file into the Altspace virtual reality environment. The final source code listing, which is **only 23 lines long** is shown at the end of this page.
 
 First clone or [download] the [AltspaceSDK Repo] from GitHub.
 
@@ -31,18 +31,15 @@ sdk/
 Next, create an HTML file with script import tags pointing to the SDK files.  
 ```
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <title>My First Altspace App</title>
     <script src="lib/three.min.js"></script>
     <script src="lib/OBJMTLLoader.js"></script>
     <script src="lib/MTLLoader.js"></script>
     <script src="sdk/AltOBJMTLLoader.js"></script>
     <script src="sdk/AltRenderer.js"></script>
-</head>
-<body>
-</body>
-</html>
+</head> <body> <script>
+</script> </body> </html>
 ```
 You can name the above file index.html, MyFirstApp.html, or whatever you like. The SDK does not require any particular directory structure or file naming.
 
@@ -59,9 +56,8 @@ cube.obj
 ```
 You can also create a model with a 3D Modeling program, or download one from any of the online catalogs (listed on the [[Resources]] page).  Be sure your model is in OBJ/MTL format, where the .obj files describes the geometry and the .mtl describes the materials of the object, as this is the only 3D object format currently supported by Altspace.  
 
-Now let's load the model.  Add the following code in the `<body>` section.
+Now let's load the model.  Add the following code after the `<script>` tag.
 ```
-<script>
 var scene = new THREE.Scene();
 var renderer = new THREE.AltRenderer();
 var cube;
@@ -72,7 +68,6 @@ loader.load("models/cube.obj", function ( loadedObject ) {
 	scene.add( cube );
 	animate();
 });
-</script>
 ```
 Note that we created the THREE.Scene as in a typical Three.js app.  We did not create a THREE.Camera, because apps use the exisiting Altspace first-person camera (which moves as the user moves around the virtual environment).  Another difference is instead of using a THREE.WebGLRenderer, we use the THREE.AltRenderer, discussed in the next step.  Inside the loader callback, we set the initial scale and position of the object, add it to the scene, and finally kick off the animation loop.
 
@@ -89,17 +84,14 @@ Congratulations, you created your first Altspace Web App!
 
 ```
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <title>My First Altspace App</title>
     <script src="lib/three.min.js"></script>
     <script src="lib/OBJMTLLoader.js"></script>
     <script src="lib/MTLLoader.js"></script>
     <script src="sdk/AltOBJMTLLoader.js"></script>
     <script src="sdk/AltRenderer.js"></script>
-</head>
-<body>
-<script>
+</head> <body> <script>
 var scene = new THREE.Scene();
 var renderer = new THREE.AltRenderer();
 var cube;
@@ -114,10 +106,7 @@ loader.load("models/cube.obj", function ( loadedObject ) {
 function animate() {
 	window.requestAnimationFrame( animate );
 	renderer.render( scene );
-};
-</script>
-</body>
-</html>
+}; </script> </body> </html>
 ```
 
 [AltspaceSDK Repo]: https://github.com/AltspaceVR/AltspaceSDK
