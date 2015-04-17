@@ -83,7 +83,7 @@ function animate() {
 	renderer.render( scene );
 };
 ```
-You're done!  Now fire up your local web server (we recommend Prepros; see the [[Workflow]] page for more info) to host this page, then copy the URL. Enter AltspaceVR (try it first with your HMD unplugged, non-VR mode), and go to a space that has an area designated for running apps.  Open the Altspace Web Browser, copy your app URL into the address bar, and select the "beam" icon. You should now see the cube (or whatever model you chose).  If you don't, check out the [[Troubleshooting]] page. If it worked, quit Altspace, plug in your Oculus Rift DK2, and view your app running in VR.  
+Now fire up your local web server (we recommend Prepros; see the [[Workflow]] page) to host this page, then copy the URL. Enter AltspaceVR (try it first with your HMD unplugged, non-VR mode), and go to a space that has an area designated for running apps.  Open the Altspace Web Browser, copy your app URL into the address bar, and select the "beam" icon. You should now see the cube or whatever model you chose.  If you don't, see the [[Troubleshooting]] page. If it worked, quit Altspace, plug in your Oculus Rift DK2, and view your app running in VR.  
 
 Congratulations, you created your first Altspace Web App!
 
