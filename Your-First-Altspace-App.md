@@ -1,4 +1,4 @@
-This tutorial takes you from checking out the SDK on GitHub to creating a simple app.  When run in the [[Altspace Web Browser]], this app imports an object loaded from a 3D model file into the Altspace virtual reality environment. The final source code listing, which is **only 30 lines of code** is shown at the end of this page.
+This tutorial takes you from checking out the SDK on GitHub to creating a simple app.  When run in the [[Altspace Web Browser]], this app imports an object loaded from a 3D model file into the Altspace virtual reality environment. The final source code listing, which is **only 30 lines long** is shown at the end of this page.
 
 First clone or [download] the [AltspaceSDK Repo] from GitHub.
 
