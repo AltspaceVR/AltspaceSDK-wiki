@@ -69,7 +69,7 @@ loader.load("models/cube.obj", function ( loadedObject ) {
 	animate();
 });
 ```
-Note that we created the THREE.Scene as in a typical Three.js app.  We did not create a THREE.Camera, because apps use the exisiting Altspace first-person camera (which moves as the user moves around the virtual environment).  Another difference is instead of using a THREE.WebGLRenderer, we use the THREE.AltRenderer.  Inside the loader callback, we set the initial scale and position of the object, add it to the scene, and kick off the animation loop.
+Note that we created the THREE.Scene as in a typical Three.js app.  We did not create a THREE.Camera, because apps use the exisiting Altspace first-person camera (which moves as the user moves around the virtual environment).  Another difference is instead of using the standard THREE.WebGLRenderer and THREE.OBJMTLLoader, we use the SDK THREE.AltOBJMTLLoader and THREE.AltRenderer.  Inside the loader callback, we set the initial scale and position of the object, add it to the scene, and kick off the animation loop.
 
 Now let's render the object in Altsapce. Add this before the `</script>` tag.
 ```
