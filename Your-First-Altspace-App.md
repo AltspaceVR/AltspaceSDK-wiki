@@ -1,6 +1,6 @@
-This tutorial is a detailed walk-through of the Spinning Cube app from the SDK repo.
+This tutorial is a walk-through of creating the Spinning Cube app from the SDK repo.
 
-If you want a briefer step-by-step overview, see the [README].
+If you want a briefer overview, see the [README].
 
 ### Step 1. Create your app HTML file
 
