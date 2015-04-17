@@ -26,9 +26,9 @@ $ ls MyFirstApp/
 lib/
 sdk/
 ```
-(If you use another directory structure, remember to adjust the paths used in your `<script>` tags below.)
+(If you use another directory structure, adjust the paths used in `<script>` tags below.)
 
-Next, create an HTML file with script import tags pointing to the SDK files you copied above.  
+Next, create an HTML file with script import tags pointing to the SDK files.  
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +59,7 @@ cube.obj
 ```
 You can also create a model with a 3D Modeling program, or download one from any of the online catalogs (listed on the [[Resources]] page).  Be sure your model is in OBJ/MTL format, where the .obj files describes the geometry and the .mtl describes the materials of the object, as this is the only 3D object format currently supported by Altspace.  
 
-To load your object, use the AltOBJMTLLoader available in the SDK.  Add the following code in the `<body>` section.
+Now let's load the model.  Add the following code in the `<body>` section.
 ```
 <script>
 var scene = new THREE.Scene();
@@ -76,14 +76,14 @@ loader.load("models/cube.obj", function ( loadedObject ) {
 ```
 Note that we created the THREE.Scene as in a typical Three.js app.  We did not create a THREE.Camera, because apps use the exisiting Altspace first-person camera (which moves as the user moves around the virtual environment).  Another difference is instead of using a THREE.WebGLRenderer, we use the THREE.AltRenderer, discussed in the next step.  Inside the loader callback, we set the initial scale and position of the object, add it to the scene, and finally kick off the animation loop.
 
-Now that the cube model is loaded, let's display it in Altsapce! Add this before the `</script>` tag.
+Now let's render the object in Altsapce. Add this before the `</script>` tag.
 ```
 function animate() {
 	window.requestAnimationFrame( animate );
 	renderer.render( scene );
 };
 ```
-You're done!  Now fire up your local web server (we recommend Prepros; see the [[Workflow]] page for more recommended development tools) to host this page and copy the URL. Then enter AltspaceVR (try it first with your HMD unplugged so Altspace runs in non-VR mode), and go to a space that has an area designated for running apps.  Open the Altspace Web Browser, copy your app URL into the address bar, and select the "beam" icon. You should now see the cube (or whatever model you chose).  If you don't, check out the [[Troubleshooting]] page. If it worked, quit Altspace, plug in your Oculus Rift DK2, and view your app running in VR.  
+You're done!  Now fire up your local web server (we recommend Prepros; see the [[Workflow]] page for more info) to host this page, then copy the URL. Enter AltspaceVR (try it first with your HMD unplugged, non-VR mode), and go to a space that has an area designated for running apps.  Open the Altspace Web Browser, copy your app URL into the address bar, and select the "beam" icon. You should now see the cube (or whatever model you chose).  If you don't, check out the [[Troubleshooting]] page. If it worked, quit Altspace, plug in your Oculus Rift DK2, and view your app running in VR.  
 
 Congratulations, you created your first Altspace Web App!
 
