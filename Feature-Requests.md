@@ -4,4 +4,4 @@
 * Support more Three.js features: Changing materials, Transparent materials, Visibility
 * Spatialized audio tags
 * Better physics reps
-
+* Enable avatar collisions on selected holograms, so avatars cannot walk through and can climb onto them
