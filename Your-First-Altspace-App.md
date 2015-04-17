@@ -15,7 +15,7 @@ examples/
 README.md
 README.html
 ```
-You could start building your app in this AltspaceSDK directory.  However, we recommend you **copy the SDK files into another directory** referenced by your app.  This will make your app more self-contained, and allow you to `git pull` changes from the AltspaceSDK repo without affecting your app.  Keep in mind this SDK is in BETA status and could change frequently, including non-backwards-compatible upgrades or discontinuing support for older versions.
+You could start building your app in this AltspaceSDK directory.  However, we recommend you **copy the SDK files into another directory** referenced by your app.  This will make your app more self-contained, and allows you to `git pull` updates from the AltspaceSDK repo without affecting the files used by your app.
 
 For example, we create a MyFirstApp directory and copy SDK files as follows.
 ```
