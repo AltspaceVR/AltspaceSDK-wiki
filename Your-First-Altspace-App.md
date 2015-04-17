@@ -85,7 +85,7 @@ Congratulations, you created your first Altspace Web App!
 ```
 <!DOCTYPE html>
 <html lang="en"> <head>
-    <title>My First Altspace App</title>
+    <title>My First App</title>
     <script src="lib/three.min.js"></script>
     <script src="lib/OBJMTLLoader.js"></script>
     <script src="lib/MTLLoader.js"></script>
@@ -94,23 +94,21 @@ Congratulations, you created your first Altspace Web App!
 </head> <body> <script>
 var scene = new THREE.Scene();
 var renderer = new THREE.AltRenderer();
-var cube;
 var loader = new THREE.AltOBJMTLLoader();
-loader.load("models/cube.obj", function ( loadedObject ) {
-	cube = loadedObject;
-	cube.scale.set( 2, 2, 2);
-	cube.position.y = 25;
-	scene.add( cube );
+loader.load("models/cube.obj", function ( object ) {
+	object.scale.set( 2, 2, 2);
+	object.position.y = 25;
+	scene.add( object );
 	animate();
 });
 function animate() {
 	window.requestAnimationFrame( animate );
 	renderer.render( scene );
-}; </script> </body> </html>
+};
+</script> </body> </html>
 ```
 
 [AltspaceSDK Repo]: https://github.com/AltspaceVR/AltspaceSDK
 [README]: https://github.com/AltspaceVR/AltspaceSDK
 [download]: https://github.com/AltspaceVR/AltspaceSDK/archive/master.zip
 [Three.js Examples]: http://threejs.org/examples/
-
