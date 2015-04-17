@@ -2,7 +2,7 @@ This tutorial takes you from checking out the SDK on GitHub to creating a simple
 
 First clone or [download] the [AltspaceSDK Repo] from GitHub.
 
-You can also using a GitHub GUI, command line shown here for brevity.
+(or use a GitHub GUI, command line shown here for brevity)
 ```
 $ git clone git@github.com:AltspaceVR/AltspaceSDK.git
 ```
