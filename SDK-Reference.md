@@ -1,7 +1,4 @@
-Explanation of the properties and methods of each component, including a link to the source code.
-
-
-
+Properties and methods of each component, including a link to the source code.
 
 * Core: 
     * [[AltOBJMTLLoader]]
