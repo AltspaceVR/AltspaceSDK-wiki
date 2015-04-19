@@ -6,7 +6,7 @@ Constructor
 
 Properties
 
-* .inAltspace {boolean} - Set to true if running in the [[Altspace Web Browser]], false otherwise.
+* .inAltspace {boolean} - Set to true if running in the [[Altspace Web Browser]].
 
 Methods
 
