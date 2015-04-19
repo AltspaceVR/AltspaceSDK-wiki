@@ -1,4 +1,4 @@
-# AltspaceSDK Wiki
+**AltspaceSDK Wiki**
 
 * Technical Docs
     * [[SDK Guide]]
