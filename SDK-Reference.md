@@ -15,4 +15,4 @@ Properties and methods of each component, including a link to the source code.
     * FirebaseSync (TODO)
 
 
-NOTE: the above documentation is hand-written, not auto-generated from source code. It is usually up-to-date but if you notice a discrepancy or error, please let us know in the [[Comments on Docs]].  
+NOTE: the above pages are hand-written, not auto-generated from source code. They are usually up-to-date but if you notice a discrepancy or error, please let us know in the [[Comments on Docs]].  
