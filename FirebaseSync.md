@@ -18,7 +18,7 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 * roomId {string} - either extracted from URL query string, or chosen randomly.
 * roomURL {string} - obtained from Firebase; root URL of this room
 * roomKey {string} - created by Firebase when room created, used in roomURL
-* TRACE {boolean} - for debugging only; when true, console.log all Firebase events. Default is false.
+* TRACE {boolean} - for debugging only; when true, console.log all Firebase events.
 
 **Methods**
 
