@@ -5,7 +5,7 @@ Properties and methods of each component, including a link to the source code.
     * [[AltRenderer]]
 
 * Cursor: 
-    * CursorEvents (TODO)
+    * [[CursorEvents]]
     * AltObjectControls (TODO)
     * Cursor Effect Plugins
         * ColorHighlightEffect (TODO)
