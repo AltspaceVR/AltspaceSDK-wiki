@@ -14,9 +14,9 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 **Properties**
 
 * firebaseRootUrl {string} - set in constructor, URL of your firebase root
-* appId {string} - set in constructor, identifies this app, allows you to host multiple apps per firebase root
+* appId {string} - set in constructor, allows you to host multiple apps per firebase root
 * roomId {string} - either extracted from URL query string, or chosen randomly.
-* roomURL {string} - obtained from Firebase during initial connection; root URL of this room
+* roomURL {string} - obtained from Firebase; root URL of this room
 * roomKey {string} - created by Firebase server when the room is created, used in roomURL
 * TRACE {boolean} - for debugging only; when true, console.log all Firebase events. Default is false.
 
