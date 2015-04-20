@@ -9,13 +9,7 @@ Cursor event names
 
 CursorEvents also manages effects, which make it easier to reuse event handling code. Multiple effects can be added to the same object, and multiple objects can be registered for the same effect (many-to-many).  You can create your own effects and also use pre-built effects which we call plugins.
 
-Related
-* Cursor event plugins including with with SDK: [[ColorHighlightEffect]], [[DragPlaneEffect]]
-* Learn more about the Altspace Cursor on the [[Altspace Web Browser]] page.
-
----
-
-Constructor
+**Constructor**
 
 * CursorEvents ( parameters )
     * (optional) parameters {object} - properties to configure the instances
@@ -23,11 +17,11 @@ Constructor
           (which is triggered on cursor movement, not object movement)  
           `cursorEvents = new CursorEvents( { defaultTarget: cube } );`
 
-Properties
+**Properties**
 
 * defaultTarget {object} - target object for holocursormove event, set by constructor parameters.  Default is null.
 
-Methods
+**Methods**
 
 * addObject ( object ) - any cursor events involving this object (previously loaded with AltOBJMTLLoader) will be dispatched directly to the object 
     * object {THREE.Object3D}
@@ -62,7 +56,11 @@ cursorEvents.addEffect( cube, effect );
 
 * update() - should be called in your animation loop, mainly used to track the last position of the cursor.
 
-Source
+**Related**
+* Cursor event plugins including with with SDK: [[ColorHighlightEffect]], [[DragPlaneEffect]]
+* Learn more about the Altspace Cursor on the [[Altspace Web Browser]] page.
+
+**Source**
 
 [src/cursor/CursorEvents.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/CursorEvents.js)
 
