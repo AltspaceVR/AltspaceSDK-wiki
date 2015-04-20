@@ -1,4 +1,4 @@
-Cursor Effect Plugins may be used with the CursorEvents manager (see [[SDK Guide]] for details, and [Repo README] for an example).  Just "plugin" the effects below to add interactive behaviors to your app objects.
+Cursor Effect Plugins may be used with the [[CursorEvents]] manager.  Just "plugin" the effects below to add interactive behaviors to your app objects.
 
 ## ColorHighlightEffect
 
