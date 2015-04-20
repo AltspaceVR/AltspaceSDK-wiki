@@ -17,7 +17,7 @@ Some hardware platforms successfully used for bulding Altspace Apps:
 * Alienware 13" laptop (i5/GTX 860M)
 * Macbook Pro 15" laptop (i7/GT 750M)
 
-Required Software:
+Recommended Software:
 * [AltspaceVR client]: executable; access to Altspace client source code is not required.
 * [Prepros]: Web dev tool with integratd web server and automatical page reloading.
 * [Sublime Text Editor]: Recommended; use any editor or IDE that supports Javascript.
@@ -29,7 +29,9 @@ Required Software:
 
 Required Accounts:
 * [GitHub]: Web-based version control. Account required for access to this SDK.
-* [Firebase]: Cloud database used by the SDK. Sign up for a free account. 
+
+Recommended Accounts:
+* [Firebase]: Cloud synchronization service useful for Altspace apps.
 
 [AltspaceVR client]: http://account.altspacevr.com
 [Firebase]: http://firebase.com
