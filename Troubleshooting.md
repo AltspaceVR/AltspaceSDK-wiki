@@ -1,7 +1,8 @@
 ## General Tips
 Things to try if your app doesn't seem to be working. (For issues installing or running the AltspaceVR Client, see the [AltspaceVR Troubleshooting Guide].)
 
-1. **RTFM**
+1. **Read through the wiki**
+   * Some things in the SDK are known to be broken or unintuitive, so being familiar with the documentation is important
    * Reading this entire wiki will take most developers less than 20 minutes
    * (fewer than 6,000 words at the average adult reading speed of 300 wpm)
 
