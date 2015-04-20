@@ -1,6 +1,6 @@
 CursorEvents dispatches Altspace Cursor API events directly to the target object.  Like the AltOBJMTLLoader and AltRenderer instances, the CursorEvents instance is typically a singleton within your app.  
 
-Cursor events
+Cursor event names
 * `holocursordown`: similar to mousedown, but only fired when cursor is over a hologram
 * `holocursorup`: similar to mouseup, but only fired when cursor is over a hologram
 * `holocursorenter`: similar to hoverOver, fired when cursor initially lands on a hologram
