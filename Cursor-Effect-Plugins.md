@@ -10,6 +10,8 @@ ColorHighlightEffect( parameters )
 * (optional) parameters {object} - properties to configure color settings
     * color {THREE.Color} - highlight color to use; set as object.userData.tintColor in Altspace.  Defaults to yellow: `THREE.Color(1, 1, 0)` 
 
+source: [src/cursor/ColorHighlightEffect.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/ColorHoverEffect.js)
+
 ### DragPlaneEffect
 
 A more complicated effect that implements drag-and-drop of objects. Click once to start drag, click again to release (holocursorup / holocursordown events).  Currently the drag movement is limited to an x-z plane parallel to the floor.  Works both in Altspace and traditional browsers.
@@ -20,6 +22,8 @@ DragPlaneEffect( parameters )
     `new THREE.Mesh( new THREE.BoxGeometry(500, 0.25, 500),
                      new THREE.MeshBasicMaterial( { transparent: true, opacity: 0.25 }));`
     * firebaseSync {[[FirebaseSync]]} - used to save an object as its position changes due to a drag.  Not needed if you are using `FirebaseSync.saveAll()`
+
+source: [src/cursor/DragPlaneEffect.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/DragPlaneEffect.js)
  
 
 [Repo README]: https://github.com/AltspaceVR/AltspaceSDK
