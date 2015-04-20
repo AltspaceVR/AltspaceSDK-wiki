@@ -16,7 +16,9 @@ A more complicated effect that implements drag-and-drop of objects. Click once t
 
 DragPlaneEffect( parameters )
 * (optional) parameters {object} - properties to configure drag settings
-    * dragPlane {[THREE.Mesh]} - mesh with [THREE.BoxGeometry], its position and width/depth should match the drag area of your scene.  If omitted, a default one is created for you; default is intended for demo purposes only.
+    * dragPlane {[THREE.Mesh]} - mesh with [THREE.BoxGeometry], its position and width/depth should match the drag area of your scene.  If omitted, a default one is created for you; default is intended for demo purposes only.  
+    `new THREE.Mesh( new THREE.BoxGeometry(500, 0.25, 500),
+                     new THREE.MeshBasicMaterial( { transparent: true, opacity: 0.25 }));`
     * firebaseSync {[FirebaseSync}] - used to save an object as its position changes due to a drag.  
 
  
