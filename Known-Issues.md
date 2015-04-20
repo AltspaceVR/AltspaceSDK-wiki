@@ -6,7 +6,6 @@
 * Audio: no mp3 (unlike Chrome).  List of [Supported Media formats][2].
     * Please try to use only webaudio, if you use flash we will be sad, and support may be dropped in the future.
     * Your audio will sound like it is coming from the middle of your webpage.
-    * In future releases: specialized audio elements for positional sound.
 * Traditional DOM is only in a single plane right now, cannot be put on 3d objects.
 
 ## Limitations of Three.js Support
