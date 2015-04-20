@@ -29,7 +29,7 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
     Currently, `addObject` must be called on any objects in your scene that you want to sync *before* calling connect().
 
 * connect( onCompleteCallback ) - connect to Firebase and start listening for updates in this room
-    * onCompleteCallback {function} - function called when connection to the room in complete  
+    * onCompleteCallback {function} - function called when the connection completes  
     * Connect Handles these cases:
         * No roomID specified in URL: create room with random roomID and join it.
         * RoomID specified in URL, and room exists in DB: join it.
