@@ -4,17 +4,28 @@ Since you only need to create the instance, than add it to an object using `Curs
 
 ### ColorHighlightEffect
 
-Simple effect that changes the color of an object on "hover over", and reverts back to the original color on "hover out" (holocursorenter / holocursorleave events).  You can select the highlight color by passing it as an argument to the constructor, if not a default highlight color is used. 
+Simple effect that changes the color of an object on "hover over", and reverts back to the original color on "hover out" (holocursorenter / holocursorleave events).  Works both in Altspace and traditional browsers.  
 
 ColorHighlightEffect( parameters )
 * (optional) parameters {object} - properties to configure color settings
-    * color {THREE.Color} - highlight color to use; defaults to yellow: THREE.Color(1, 1, 0) 
+    * color {THREE.Color} - highlight color to use; set as object.userData.tintColor in Altspace  
+      defaults to yellow: `THREE.Color(1, 1, 0)` 
 
-### DragEffect
+### DragPlaneEffect
 
-A more complicated effect that implements drag-and-drop of objects. Click once to start drag, click again to release (holocursorup / holocursordown events).  Currently the drag movement is limited to an x-z plane parallel to the floor. You can select a drag plane (THREE.Mesh with BoxGeometry) by passing it as parameter to the constructor, if not a default one will be created for you. You can also include the firebaseSync instance, if you want to sync an object after its position changes due to a drag.
+A more complicated effect that implements drag-and-drop of objects. Click once to start drag, click again to release (holocursorup / holocursordown events).  Currently the drag movement is limited to an x-z plane parallel to the floor.  Works both in Altspace and traditional browsers.
+
+DragPlaneEffect( parameters )
+* (optional) parameters {object} - properties to configure drag settings
+    * dragPlane {[THREE.Mesh]} - mesh with [THREE.BoxGeometry]  
+      Position and width/depth should match the drag area of your scene.  
+      If omitted, a default one is created for you; intended for demo purposes only.
+    * firebaseSync {[FirebaseSync}] - used to save object an as its position changes due to a drag
+
+ 
 
 
 [Repo README]: https://github.com/AltspaceVR/AltspaceSDK
 [THREE.Color]: http://threejs.org/docs/#Reference/Math/Color
-
+[THREE.Mesh]: http://threejs.org/docs/#Reference/Objects/Mesh
+[THREE.BoxGeometry]: http://threejs.org/docs/#Reference/Extras.Geometries/BoxGeometry
