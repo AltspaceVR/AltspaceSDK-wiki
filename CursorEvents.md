@@ -25,7 +25,7 @@ CursorEvents also manages effects, which make it easier to reuse event handling 
 
 * addObject ( object ) - any cursor events involving this object (previously loaded with AltOBJMTLLoader) will be dispatched directly to the object 
     * object {THREE.Object3D}
-```
+```js
 var cursorEvents = new CursorEvents();
 cursorEvents.addObject( cube ); 
 object.addEventListener( "holocursordown", function( event ) {
@@ -39,7 +39,7 @@ object.addEventListener( "holocursordown", function( event ) {
 * addEffect( effect, object)
     * effect {object} - implements one of more of the cursor event callbacks.  Example: [ColorHighlightEffect]
     * object {THREE.Object3D} - object to which the effect will be applied.  
-```
+```js
 var soundEffect = {
     holocursorenter: function( event ) { enter-sound.play() },
     holocursorleave: function( event ) { leave-sound.play() }
