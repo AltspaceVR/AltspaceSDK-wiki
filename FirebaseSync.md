@@ -38,7 +38,8 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 * saveObject( object ) - save state of this object (broadcasts updates to all clients)
     * object {[THREE.Object3D]} - object to save (must `addObject` first)
 
-* save() - save all objects that have changed since the last save
+* save() - save all objects that have changed since the last save  
+  Note: If objects in your app are changing position or rotation every frame, calling this in your animate loop can lead to substantial network traffic due to sync events.
 
 
 **Source**
