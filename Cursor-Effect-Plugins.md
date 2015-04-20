@@ -1,8 +1,14 @@
-Cursor Effect Plugins may be used with the [[CursorEvents]] manager.  Just "plugin" the effects below to add interactive behaviors to your app objects.
+Cursor Effect Plugins may be used with the [[CursorEvents]] manager.  Just "plugin" the effects below to add interactive behaviors to your app objects.  
+
+Since you only need to create the instance, than add it to an object using `CursorEvents.addEffect` in most cases only the constructors are listed below.
 
 ### ColorHighlightEffect
 
 Simple effect that changes the color of an object on "hover over", and reverts back to the original color on "hover out" (holocursorenter / holocursorleave events).  You can select the highlight color by passing it as an argument to the constructor, if not a default highlight color is used. 
+
+ColorHighlightEffect( parameters )
+* (optional) parameters {object} - properties to configure color settings
+    * color {THREE.Color} - highlight color to use; defaults to yellow: THREE.Color(1, 1, 0) 
 
 ### DragEffect
 
@@ -10,3 +16,5 @@ A more complicated effect that implements drag-and-drop of objects. Click once t
 
 
 [Repo README]: https://github.com/AltspaceVR/AltspaceSDK
+[THREE.Color]: http://threejs.org/docs/#Reference/Math/Color
+
