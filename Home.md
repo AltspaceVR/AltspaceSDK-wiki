@@ -5,7 +5,7 @@ Here you will find the official Documentation for the Altspace Apps SDK.
 Table of Contents:
 
 * Technical Docs
-    * [[SDK Reference]] - details of the objects and methods available in the SDK
+    * [[SDK Reference]] - details of SDK components, with links to source code
     * [[Cursor Effect Plugins]] - easily add cursor interactions to your app objects
     * [[Altspace Web Browser]] - intro to the custom browser that will run your apps
 
