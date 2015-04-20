@@ -1,2 +1,2 @@
-[[Home]] - Add your [[Comments on Docs]]   
+[[Home]] - [[SDK Reference]]   
 Copyright (c) 2015 AltspaceVR
