@@ -1,7 +1,13 @@
-# Resources
 Links to useful online resources.
 
-## Three.js
+### Models, Sounds, etc.
+* in this SDK: [examples/models], [examples/sounds]
+* 3D Models: [TurboSquid], [TF3DM], [SketchFab]
+* 3D model format converter: [greentoken]
+* Audio Clips, Sound Effects: [FreeSound.org]
+* Audio format converter: [online-convert]
+
+### Three.js
 
 * Tutorials
     * [Official Three.js Docs], [Official Three.js Wiki]
@@ -14,18 +20,15 @@ Links to useful online resources.
     * [Learning Three.js], [Three.js Cookbook], and [Three.js Essentials] by Jos Dirksen
     * [Three.js: Questions and Answers], compiled from [Stack Overflow: Three.js]  
 
-## Audio and Visual Assets
-* 3D Models: [TurboSquid], [TF3DM], [SketchFab]
-* 3D model format converter: [greentoken]
-* Audio Clips, Sound Effects: [FreeSound.org]
-* Audio format converter: [online-convert]
-
-## Related Work / Cool Stuff
+### Related Work / Cool Stuff
 * [WebGameLinks] - Things that are/could be cool in AltspaceVR
 * [VoodooJS] - JS framework for mixing 2D and 3D content.
 * [SceneVR] - Create Virtual Reality scenes with markup + Javascript.
 
 [REFERENCE-STYLE LINK DEFINITIONS FOLLOW]:dummylink
+[examples/models]: https://github.com/AltspaceVR/AltspaceSDK/tree/master/examples/models
+[examples/sounds]: https://github.com/AltspaceVR/AltspaceSDK/tree/master/examples/sounds
+
 [Official Three.js Docs]: http://threejs.org/docs/index.html#Manual/Introduction/Creating_a_scene
 [Official Three.js Wiki]: https://github.com/mrdoob/three.js/wiki/Getting-Started
 [Official Three.js Examples]: http://threejs.org/examples/
