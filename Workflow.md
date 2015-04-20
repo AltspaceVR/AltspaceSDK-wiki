@@ -22,7 +22,8 @@ Recommended Software:
 * [Prepros]: Web dev tool with integratd web server and automatical page reloading.
 * [Sublime Text Editor]: Recommended; use any editor or IDE that supports Javascript.
 * Coherent Debugger: Allows you to see the console output of your Altspace web app
-    * TBD: download link?
+    * [OSX Debugger]
+    * [Windows Debugger]
     * on Mac: cannot rename it from Debugger.app after you extract it, or it won't run
     * due to legacy .app bundle structure -- it needs an Info.plist with metadata.
 * [GitHub Client]: any command-line (Windows users: consider [Cygwin]) or a GUI client. 
@@ -40,3 +41,5 @@ Recommended Accounts:
 [GitHub]: https://github.com/
 [GitHub Client]: http://git-scm.com/downloads/guis
 [Cygwin]: https://www.cygwin.com/
+[OSX Debugger]: http://sdk.altvr.com/debugger/DebuggerMacOSX.zip
+[Windows Debugger]: http://sdk.altvr.com/debugger/DebuggerWindows.zip
