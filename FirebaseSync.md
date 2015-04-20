@@ -22,7 +22,27 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 
 **Methods**
 
+* addObject( object, key ) - register this object for synchronization
+    * object {[THREE.Object3D]} - sync position, rotation, and scale for this object
+    * key {string} - app-wide unique identifier for this object
+
+    Currently, `addObject` must be called on any objects in your scene that you want to sync *before* calling connect().
+
+* connect( onCompleteCallback ) - connect to Firebase and start listening for updates in this room
+    * onCompleteCallback {function} - function called when connection to the room in complete  
+    * Connect Handles these cases:
+        * No roomID specified in URL: create room with random roomID and join it.
+        * RoomID specified in URL, and room exists in DB: join it.
+        * RoomID specified in URL, but room does not exists: create and join it.
+
+* saveObject( object ) - save current state of this object (broadcasts updates to all clients)
+    * object {[THREE.Object3D]} - 
+
+* saveAll() - save all objects that have changed since the last call to `saveAll`  
+  NOT recommended to call this in your update loop if objects change every frame
+
 
 **Source**
 
 * [src/sync/FirebaseSync.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/sync/FirebaseSync.js)
+* [THREE.Object3D] - http://threejs.org/docs/#Reference/Core/Object3D
