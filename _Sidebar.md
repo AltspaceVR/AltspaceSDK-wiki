@@ -1,7 +1,7 @@
 **AltspaceSDK Wiki**
 
 * Technical Docs
-    * [[SDK Guide]]
+    * [[SDK Reference]]
     * [[Cursor Effect Plugins]]
     * [[Altspace Web Browser]]
 
