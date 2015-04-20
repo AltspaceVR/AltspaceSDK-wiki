@@ -12,6 +12,6 @@ Properties and methods of each component, including a link to the source code.
         * DragPlaneEffect (TODO)
 
 * Sync: 
-    * FirebaseSync (TODO)
+    * [[FirebaseSync]]
 
 
