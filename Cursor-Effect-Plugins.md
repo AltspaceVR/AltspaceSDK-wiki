@@ -19,7 +19,7 @@ DragPlaneEffect( parameters )
     * dragPlane {[THREE.Mesh]} - mesh (does not need to be added to the scene) with [THREE.BoxGeometry], its position and width/depth should match the drag area of your scene.  If omitted, a default one is created for you:  
     `new THREE.Mesh( new THREE.BoxGeometry(500, 0.25, 500),
                      new THREE.MeshBasicMaterial( { transparent: true, opacity: 0.25 }));`
-    * firebaseSync {[FirebaseSync}] - used to save an object as its position changes due to a drag.  Not needed if you are using `FirebaseSync.saveAll()`
+    * firebaseSync {[[FirebaseSync]]} - used to save an object as its position changes due to a drag.  Not needed if you are using `FirebaseSync.saveAll()`
 
  
 
