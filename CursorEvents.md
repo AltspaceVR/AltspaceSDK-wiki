@@ -57,7 +57,7 @@ var effect = new ColorHighlightEffect();
 cursorEvents.addEffect( cube, effect );
 ```
 
-* enableMouseEvents( camera ) - when running in a traditional browser (not in Altspace), use [AltObjectControls] 
+* enableMouseEvents( camera ) - when running in a traditional browser (not in Altspace), use [[AltObjectControls]] 
     * camera {[THREE.Camera]} - camera from the Three.js scene, used for raycasting.
 
 * update() - should be called in your animation loop, mainly used to track the last position of the cursor.
