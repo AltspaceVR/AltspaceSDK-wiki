@@ -8,8 +8,7 @@ Simple effect that changes the color of an object on "hover over", and reverts b
 
 ColorHighlightEffect( parameters )
 * (optional) parameters {object} - properties to configure color settings
-    * color {THREE.Color} - highlight color to use; set as object.userData.tintColor in Altspace  
-      defaults to yellow: `THREE.Color(1, 1, 0)` 
+    * color {THREE.Color} - highlight color to use; set as object.userData.tintColor in Altspace.  Defaults to yellow: `THREE.Color(1, 1, 0)` 
 
 ### DragPlaneEffect
 
