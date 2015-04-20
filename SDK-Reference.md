@@ -14,5 +14,4 @@ Properties and methods of each component, including a link to the source code.
 * Sync: 
     * FirebaseSync (TODO)
 
-If you notice any errors or omissions, please let us know in the [[Comments on Docs]].  
 
