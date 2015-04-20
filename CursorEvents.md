@@ -57,7 +57,7 @@ cursorEvents.addEffect( cube, effect );
 * update() - should be called in your animation loop, mainly used to track the last position of the cursor.
 
 **Related**
-* Cursor event plugins including with with SDK: [[ColorHighlightEffect]], [[DragPlaneEffect]]
+* Cursor event plugins including with this SDK: [[Cursor Effect Plugins]]
 * Learn more about the Altspace Cursor on the [[Altspace Web Browser]] page.
 
 **Source**
