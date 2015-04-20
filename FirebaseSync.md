@@ -4,11 +4,25 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 
 **Constructor**
 
+* FirebaseSync( firebaseRootUrl, appId, parameters ) -
+    * firebaseRootUrl {string} - example: "https://your-firebase-root.firebaseio.com/"
+    * appId {string} - example: "My-App-Name"
+    * parameters {object} - properties to initialize the instance
+        * syncUserDataProps {array} - list of which properties to sync in THREE.Object3D.userData  
+          (for example,  `syncUserDataProps = [ "gameState" ]` )
+          
 **Properties**
+
+* firebaseRootUrl {string} - set in constructor, URL of your firebase root
+* appId {string} - set in constructor, identifies this app, allows you to host multiple apps per firebase root
+* roomId {string} - either extracted from URL query string, or chosen randomly.
+* roomURL {string} - obtained from Firebase during initial connection; root URL of this room
+* roomKey {string} - created by Firebase server when the room is created, used in roomURL
+* TRACE {boolean} - for debugging only; when true, console.log all Firebase events. Default is false.
 
 **Methods**
 
 
 **Source**
 
-* [FirebaseSync.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/sync/FirebaseSync.js)
+* [src/sync/FirebaseSync.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/sync/FirebaseSync.js)
