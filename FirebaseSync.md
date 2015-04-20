@@ -35,7 +35,7 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
         * RoomID specified in URL, and room exists in DB: join it.
         * RoomID specified in URL, but room does not exists: create and join it.
 
-* saveObject( object ) - save current state of this object (broadcasts updates to all clients)
+* saveObject( object ) - save state of this object (broadcasts updates to all clients)
     * object {[THREE.Object3D]} - 
 
 * saveAll() - save all objects that have changed since the last call to `saveAll`  
