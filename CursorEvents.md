@@ -5,7 +5,7 @@ Cursor events
 * `holocursorup`: similar to mouseup, but only fired when cursor is over a hologram
 * `holocursorenter`: similar to hoverOver, fired when cursor initially lands on a hologram
 * `holocursorleave`: similar to hoverOut, fired when cursor stops landing on a hologram
-* `holocursormove`: similar to mousemove, fired when cursor moves anywhere in the enclosure.
+* `holocursormove`: similar to mousemove, not related to a specific hologram
 
 CursorEvents also manages effects, which make it easier to reuse event handling code. Multiple effects can be added to the same object, and multiple objects can be registered for the same effect (many-to-many relationship). To create effects, simply implement the Cursor Event callbacks that your effect requires:  You can also use pre-built effects which we call plugins.  
 
