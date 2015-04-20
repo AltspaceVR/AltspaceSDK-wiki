@@ -1,6 +1,6 @@
-Cursor Effect Plugins may be used with the [[CursorEvents]] manager.  Just "plugin" the effects below to add interactive behaviors to your app objects.  
+Cursor Effect Plugins may be used with the [[CursorEvents]] manager.  Just "plugin" the effects below to add interactive behaviors to your app objects.  Since you only need to create the instance, than add it to an object using `CursorEvents.addEffect` in most cases only the constructors are listed below.
 
-Since you only need to create the instance, than add it to an object using `CursorEvents.addEffect` in most cases only the constructors are listed below.
+Example: [/src/examples/spinningcube.html](https://github.com/AltspaceVR/AltspaceSDK/blob/master/examples/spinningcube.html), in function `initEvents()`
 
 ### ColorHighlightEffect
 
@@ -20,9 +20,7 @@ DragPlaneEffect( parameters )
     `new THREE.Mesh( new THREE.BoxGeometry(500, 0.25, 500),
                      new THREE.MeshBasicMaterial( { transparent: true, opacity: 0.25 }));`
     * firebaseSync {[[FirebaseSync]]} - used to save an object as its position changes due to a drag.  Not needed if you are using `FirebaseSync.saveAll()`
-
  
-
 
 [Repo README]: https://github.com/AltspaceVR/AltspaceSDK
 [THREE.Color]: http://threejs.org/docs/#Reference/Math/Color
