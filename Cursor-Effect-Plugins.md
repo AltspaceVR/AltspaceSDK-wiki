@@ -1,7 +1,5 @@
 Cursor Effect Plugins may be used with the [[CursorEvents]] manager.  Just "plugin" the effects below to add interactive behaviors to your app objects.  Since you only need to create the instance, than add it to an object using `CursorEvents.addEffect` in most cases only the constructors are listed below.
 
-Example: [/src/examples/spinningcube.html](https://github.com/AltspaceVR/AltspaceSDK/blob/master/examples/spinningcube.html), in function `initEvents()`
-
 ### ColorHighlightEffect
 
 Simple effect that changes the color of an object on "hover over", and reverts back to the original color on "hover out" (holocursorenter / holocursorleave events).  Works both in Altspace and traditional browsers.  
@@ -10,7 +8,8 @@ ColorHighlightEffect( parameters )
 * (optional) parameters {object} - properties to configure color settings
     * color {THREE.Color} - highlight color to use; set as object.userData.tintColor in Altspace.  Defaults to yellow: `THREE.Color(1, 1, 0)` 
 
-source: [src/cursor/ColorHighlightEffect.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/ColorHoverEffect.js)
+Example: [/src/examples/spinning-cube.html](https://github.com/AltspaceVR/AltspaceSDK/blob/master/examples/spinningcube.html), in function `initEvents()`  
+Source: [src/cursor/ColorHighlightEffect.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/ColorHoverEffect.js)
 
 ### DragPlaneEffect
 
@@ -23,7 +22,8 @@ DragPlaneEffect( parameters )
                      new THREE.MeshBasicMaterial( { transparent: true, opacity: 0.25 }));`
     * firebaseSync {[[FirebaseSync]]} - used to save an object as its position changes due to a drag.  Not needed if you are using `FirebaseSync.saveAll()`
 
-source: [src/cursor/DragPlaneEffect.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/DragPlaneEffect.js)
+Example: [/src/examples/spinning-cube.html](https://github.com/AltspaceVR/AltspaceSDK/blob/master/examples/spinningcube.html), in function `initEvents()`  
+Source: [src/cursor/DragPlaneEffect.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/DragPlaneEffect.js)
  
 
 [Repo README]: https://github.com/AltspaceVR/AltspaceSDK
