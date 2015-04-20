@@ -2,20 +2,20 @@ The AltRender forms the link between the ThreeJS scene and the Altspace virtual 
 
 Note that AltRender constructor requires only the scene, since the camera is managed by Altspace, unlike the WebGLRenderer constructor that takes the scene and camera as arguments. Note also that render is the only method currently supported, so you should avoid calling setSize, setClearColor, or other methods when using the AltRender. If you only plan to run and develop your app inside Altspace, this is the only renderer you need. If you want your app to run in traditional web browsers as well,you will need to detect which environment is present and create the correct renderer.
 
-Constructor
+**Constructor**
 
 * THREE.AltRenderer ()
 
-Properties
+**Properties**
 
 * .inAltspace {boolean} - Set to true if running in the [[Altspace Web Browser]].
 
-Methods
+**Methods**
 
 * render( scene ) - render all objects in the scene that were loaded with the [[AltOBJMTLLoader]]. Usually called in the animation loop.  
     * scene {[THREE.Scene]} - Three.js scene containing the objects to be rendered.  
 
-Source
+**Source**
 
 * [src/AltRenderer.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/AltRenderer.js)
 
