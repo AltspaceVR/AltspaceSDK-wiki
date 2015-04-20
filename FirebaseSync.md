@@ -45,4 +45,5 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 **Source**
 
 * [src/sync/FirebaseSync.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/sync/FirebaseSync.js)
-* [THREE.Object3D] - http://threejs.org/docs/#Reference/Core/Object3D
+
+[THREE.Object3D] - http://threejs.org/docs/#Reference/Core/Object3D
