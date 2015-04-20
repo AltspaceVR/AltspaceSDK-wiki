@@ -1,7 +1,4 @@
 
-### AltObjectControls
-AltObjectControls extends [ObjectControls], an open-source library for interacting with ThreeJS objects using a mouse or other input device, to work with Altspace cursor events. The advantage of using AltObjectControls is your app will respond appropriately to both cursor events when running in Altspace and mouse events when running the web browser.  Typically you will not create the AltObjectControls instance or call its methods directly, as it is managed by the CursorEvents (see above). The key method is `CursorEvents.enableMouseEvents()`. 
-
 ### FirebaseSync
 FirebaseSync synchronizes the positions of objects across the network. If one user moves a hologram, all other users in the room will see the object in the new position. This is currently done using the Firebase object database, so a  Firebase Account is required.  Sign up for free at Firebase.com and note your database URL, which is an argument to the FirebaseSync constructor.  
 
