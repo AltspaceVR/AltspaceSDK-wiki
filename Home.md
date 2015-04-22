@@ -16,6 +16,7 @@ Table of Contents:
     * [[Workflow]] - suggesting development tools and best practices for building apps
     * [[Troubleshooting]] - tips for diagnosing issues that you may encounter
     * [[Resources]] - Links to online Three.js tutorials, 3D model libraries, and more.
+    * [[Contributing]] - guidelines for contributing source code to this repository.
 
 * Feedback
     * [[Known Issues]] - Existing limitations. Check BEFORE creating new issues.
