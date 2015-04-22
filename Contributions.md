@@ -2,7 +2,7 @@
 
 When contributing code:
 * In your [Pull Request](../pulls) comment, note the Issue that your change fixes or implements.
-* If no relavent Issue, create one on the [issues page](../issues).
+* If no relavent Issue, create one on the [issues page](../issues) before you begin work.  
 * If adding or changing user-visible methods, update the [[SDK Reference]].
 * Where possible, follow [Mr. doob's Code Style] used in the [Three.js] repo. 
 
