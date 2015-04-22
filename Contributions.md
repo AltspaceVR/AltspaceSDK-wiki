@@ -8,9 +8,9 @@ When contributing code:
 
 Additional guidelines - from [Three.js Contribution Guidelines]
 * Create separate branches per patch or feature.
-* Once done with a patch / feature do not add more commits to a feature branch (pull requests are not repository state snapshots, any change you do in that branch will be included in the pull request).
+* Once done with a patch or feature, do not add more commits to a feature branch. (Pull requests are not repository state snapshots; any change you make in that branch will be included in the pull request.)
 * If you add a new feature it's good to add also an example (both for showing how it's used and for testing it still works after eventual refactorings).
-* If you add some assets for the examples (like textures, models, sounds, etc), make sure they have a proper license allowing for their use here (less restrictive the better).
+* If you add some assets for the examples (like textures, models, sounds, etc), make sure they have a proper license allowing for their use here. (Less restrictive is better.)
 * If you modify existing code (refactoring / optimization / bug fix), run relevant examples to check they didn't break or that there wasn't some performance regress.
 
 
