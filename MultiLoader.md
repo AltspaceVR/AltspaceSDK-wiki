@@ -2,7 +2,7 @@ Helper for loading multiple models, serially or in parallel.
 
 **Constructor**
 
-None. Singleton instance is created when script is imported (uses the Javascript [Module Pattern](http://toddmotto.com/mastering-the-module-pattern/)).
+None. Instance created when script is imported (uses Javascript [Module Pattern](http://toddmotto.com/mastering-the-module-pattern/)).
 
 **Properties**
 
