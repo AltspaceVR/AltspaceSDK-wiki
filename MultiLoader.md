@@ -20,7 +20,7 @@ None. Instance created when script is imported (uses Javascript [Module Pattern]
         * cacheKey {string} - id for this object, such as "cube-1", must be unique among all objects loaded by MultiLoader. Needed to differentiate between multiple objects loaded from same fileName. 
     * cb {function} - called when all files finished loading
 
-* getCached( cacheKey ) - Retrieve the cached object. Returns null if the item does not exist. 
+* getCached( cacheKey ) - Retrieve the cached object. Returns null if item does not exist. 
     * cacheKey {string} - object id, passes as parameter when it was initially loaded.
 
 **Example**
