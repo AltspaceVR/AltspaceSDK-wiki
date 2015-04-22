@@ -13,5 +13,5 @@ Properties and methods of each component, including a link to the source code.
     * [[FirebaseSync]] - Synchronizes object positions between multiple users.
 
 * Helpers:
-    * [[MultiLoader]] - Loads multiple OBJ/MTL files, serially or in parallel.
+    * [[MultiLoader]] - Loads multiple OBJ/MTL files, sequentially or in parallel.
 
