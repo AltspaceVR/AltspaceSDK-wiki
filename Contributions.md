@@ -13,6 +13,7 @@ Additional guidelines - from [Three.js Contribution Guidelines]
 * If you add some assets for the examples (like textures, models, sounds, etc), make sure they have a proper license allowing for their use here. (Less restrictive is better.)
 * If you modify existing code (refactoring / optimization / bug fix), run relevant examples to check they didn't break or that there wasn't some performance regress.
 
+Copyright Notice: All contributions to this repo become property of AltspaceVR.
 
 [Mr. doob's Code Style]: https://github.com/mrdoob/three.js/wiki/Mr.doob%27s-Code-Style%E2%84%A2
 [Three.js]: https://github.com/mrdoob/three.js 
