@@ -21,7 +21,7 @@ None. Instance created when script is imported (uses Javascript [Module Pattern]
     * cb {function} - called when all files finished loading
 
 * getCached( cacheKey ) - Retrieve the cached object. Returns null if the item does not exist. 
-    * cacheKey {string} - id for the object, passes as parameter when it was initially loaded.
+    * cacheKey {string} - object id, passes as parameter when it was initially loaded.
 
 **Example**
 
