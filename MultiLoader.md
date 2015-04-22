@@ -14,11 +14,14 @@ None. Instance created when script is imported (uses Javascript [Module Pattern]
 * loadFilesInSeries( fileList, cb, optionalLoader ) - for loading many of the same object
     * same parameters as `loadFilesInParallel` above
 
-* loadModel( fileParams, cb ) - default file loader, called for each file in fileList.
+* loadModel( fileParams, cb ) - the default file loader, called for each file in fileList.
     * fileParams {object} - object with two properties: fileName and cacheKey
         * fileName {string} - path to the OBJ file, such as "/models/cube.obj"
         * cacheKey {string} - id for this object, such as "cube-1", must be unique among all objects loaded by MultiLoader. Needed to differentiate between multiple objects loaded from same fileName. 
     * cb {function} - called when all files finished loading
+
+* getCached( cacheKey ) - Retrieve the cached object. Returns null if the item does not exist. 
+    * cacheKey {string} - id for the object, passes as parameter when it was initially loaded.
 
 **Example**
 
