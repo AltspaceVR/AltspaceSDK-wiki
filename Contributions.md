@@ -1,7 +1,7 @@
 ### Guidelines for Contributing to the AltspaceSDK
 
 When contributing code:
-* In your [Pull Request](../pulls) comment, note the Issue that your changes fix or implement.
+* In your [Pull Request](../pulls) comment, note the Issue that your change fixes or implements.
 * If no relavent Issue, create one on the [issues page](../issues).
 * If adding or changing user-visible methods, update the [[SDK Reference]].
 * Where possible, follow [Mr. doob's Code Style] used in the [Three.js] repo. 
