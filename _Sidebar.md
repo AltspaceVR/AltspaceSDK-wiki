@@ -12,6 +12,7 @@
     * [[Workflow]]
     * [[Troubleshooting]]
     * [[Resources]]
+    * [[Contributing]]
 
 * Feedback
     * [[Known Issues]]
