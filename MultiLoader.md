@@ -6,12 +6,12 @@ None. Instance created when script is imported (uses Javascript [Module Pattern]
 
 **Methods**
 
-* loadFilesInParallel( fileList, cb, optionalLoader ) - for loading many different objects
+* loadFilesInParallel( fileList, cb, optionalLoader ) - for loading many different objects. If optionalLoader is omitted, files are loaded with default loader and can be retrieved with 'getCache` below.
     * fileList {array} - list containing one item (such as `fileParams` below) for each file
     * cb {function} - called when all files are loaded
     * (optional) optionalLoader {function} - function called for each item in fileList. Default is MultiLoader.loadModel, which uses `THREE.AltOBJMTLLoader`.
 
-* loadFilesInSeries( fileList, cb, optionalLoader ) - for loading many of the same object
+* loadFilesInSeries( fileList, cb, optionalLoader ) - for loading many of the same object.   If optionalLoader is omitted, files are loaded with default loader and can be retrieved with 'getCache` below.
     * same parameters as `loadFilesInParallel` above
 
 * loadModel( fileParams, cb ) - the default file loader, called for each file in fileList.
