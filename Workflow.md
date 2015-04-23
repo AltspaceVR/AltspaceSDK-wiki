@@ -4,7 +4,7 @@ This page describes the typical workflow for developing an Altspace Web App.
 
 When building an app from scratch, we recommend developing it inside of Altspace. It is possible to use a normal WebGL renderer when your app detects that it is not in Altspace, and develop in chrome, but things may render differently.
 
-While developing in Altspace, it can be helpful to have the client in 2D windowed mode. To do this, start Altspace with your Oculus unplugged or turned off which should cause it to launch in 2D mode. Then either hold shift before Altspace loads (after logging in) and pick windowed mode, or hit **left-command (OSX) / left-ctrl (Win) + left-alt + W** to switch to windowed mode when Altspace is running. You now should also be able to drag the far edges of the window to resize it (even if the resize cursor does not appear). 
+While developing in Altspace, it can be helpful to have the client in 2D windowed mode. To do this, start Altspace with your Oculus unplugged or turned off which should cause it to launch in 2D mode. Then either hold shift before Altspace loads (after logging in) and pick windowed mode, or use the windowed-mode toggle shortcut when Altspace is running: **left-command** (on OSX) / **left-ctrl + left-alt + W** (on Windows... known issue: the Altspace window may go blank/blue when switching to windowed mode, just use the shortcut twice more to toggle to full-screen then back again.)  You now should also be able to drag the far edges of the window to resize it, even if the resize cursor does not appear. 
 
 It is also extremely helpful to use a local webserver that supports live-reload. We recommend Prepros. Developing from file:// is not recommended due to cross domain issues.
 
