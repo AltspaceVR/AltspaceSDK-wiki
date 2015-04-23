@@ -6,6 +6,8 @@ When building an app from scratch, we recommend developing it inside of Altspace
 
 While developing in Altspace, it can be helpful to have the client in 2D windowed mode. To do this, start Altspace with your Oculus unplugged or turned off which should cause it to launch in 2D mode. Then either hold shift before Altspace loads (after logging in) and pick windowed mode, or hit **left-command (OSX) / left-ctrl (Win) + W** to switch to windowed mode when Altspace is running. You now should also be able to drag the far edges of the window to resize it (even if the resize cursor does not appear). 
 
+It is also extremely helpful to use a local webserver that supports live-reload. We recommend Prepros. Developing from file:// is not recommended due to cross domain issues.
+
 ## Requirements Overview
 
 Hardware Requirements
