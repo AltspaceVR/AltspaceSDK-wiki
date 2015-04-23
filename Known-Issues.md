@@ -19,7 +19,7 @@
 ## Limitations of SDK
 * Sychronization:
     * Firebase has a latency on the order of 100 ms, so synchronizing fast-moving objects (like bullets) may not work smoothly.  
-    * New synchronized objects cannot be added to the scene after the initial `connect()` operation.  (This limitation will be removed in a future version of the SDK).
+    * New objects cannot be added to FirebaseSync after the initial `connect()` operation.  (This limitation will be removed in a future version of the SDK).
 
 
 [1]: https://chromium.googlesource.com/chromiumos/manifest-versions/+/master/paladin/buildspecs/
