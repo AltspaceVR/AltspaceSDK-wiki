@@ -16,6 +16,11 @@
 * Physic reps are not exact (object aligned cuboids, 80% the size of a bounding box)
 * MTL files must contain *only* the materials actually used, and must not link to broken or missing textures. **MAYA MAY EXPORT BAD MTL FILES BY DEFAULT**. If an object is not showing up, open the MTL file in a text editor and clean out any extra materials.
 
+## Limitations of SDK
+* Sychronization:
+    * Firebase has a latency on the order of 100 ms, so synchronizing fast-moving objects (like bullets) may not work smoothly.  
+    * New synchronized objects cannot be added to the scene after the initial `connect()` operation.  (This limitation will be removed in a future version of the SDK).
+
 
 [1]: https://chromium.googlesource.com/chromiumos/manifest-versions/+/master/paladin/buildspecs/
 [2]: https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats
