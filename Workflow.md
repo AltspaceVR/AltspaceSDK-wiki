@@ -2,7 +2,7 @@ This page describes the typical workflow for developing an Altspace Web App.
 
 ## Workflow Overview
 
-If building an app from scratch, we recommend developing it inside of Altspace. It is possible to use a normal WebGL renderer if your app detects that it is not in Altspace, and develop in chrome, but things may render differently.
+When building an app from scratch, we recommend developing it inside of Altspace. It is possible to use a normal WebGL renderer if your app detects that it is not in Altspace, and develop in chrome, but things may render differently.
 
 While developing in Altspace, it can be helpful to have the application in 2D windowed mode. To do this, start Altspace with your Oculus unplugged or turned off. Then either hold shift before Altspace loads (after logging in) and pick windowed mode, or hit **left-command (OSX) / left-ctrl (Win) + W** to switch to windowed mode when Altspace is running. You now should also be able to drag the far edges of the window to resize it (even if the resize cursor does not appear). 
 
@@ -16,7 +16,7 @@ Hardware Requirements
 
 Note the above requirements are for developing Altspace apps, not for simply running Altspace, which can be done on computers without a dedicated GPU.  The additional graphics power is needed when developing apps since you will also be running additional debugging tools, described below. (Integrated graphics *may* work, although not officially supported.)
 
-Some hardware platforms successfully used for bulding Altspace Apps:
+Some hardware platforms successfully used for building Altspace Apps:
 * Custom Gaming Desktop (i7/R9 200)
 * Asus ROG G751 17" laptop (i7/GTX 980M)
 * Lenovo Y50 15" laptop (i7/GTX 860M)
@@ -25,7 +25,7 @@ Some hardware platforms successfully used for bulding Altspace Apps:
 
 Recommended Software:
 * [AltspaceVR client]: executable; access to Altspace client source code is not required.
-* [Prepros]: Web dev tool with integratd web server and automatical page reloading.
+* [Prepros]: Web dev tool with integrated web server and automatically page reloading.
 * [Sublime Text Editor]: Recommended; use any editor or IDE that supports Javascript.
 * Coherent Debugger: Allows you to see the console output of your Altspace web app
     * [OSX Debugger]
