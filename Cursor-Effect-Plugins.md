@@ -21,7 +21,7 @@ DragPlaneEffect( parameters )
     `new THREE.Mesh( new THREE.BoxGeometry(500, 0.25, 500),
                      new THREE.MeshBasicMaterial( { transparent: true, opacity: 0.25 }));`
     * firebaseSync {[[FirebaseSync]]} - used to save an object as its position changes due to a drag.  Not needed if you are using `FirebaseSync.saveAll()`
-    * dragPointMarker {[THREE.Mesh]} - For degbugging; mark the raycaster intersection point on drag and hoverOver. Mesh with SphereGeometry works well.
+    * dragPointMarker {[THREE.Mesh]} - For degbugging; mark the raycast intersection point on drag and hoverOver. Mesh with SphereGeometry works well.
 
 Example: [/src/examples/spinning-cube.html](https://github.com/AltspaceVR/AltspaceSDK/blob/master/examples/spinningcube.html), in function `initEvents()`  
 Source: [src/cursor/DragPlaneEffect.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/cursor/DragPlaneEffect.js)
