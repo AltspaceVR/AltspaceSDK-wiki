@@ -7,9 +7,7 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 * FirebaseSync( firebaseRootUrl, appId, parameters ) -
     * firebaseRootUrl {string} - example: "https://your-firebase-root.firebaseio.com/"
     * appId {string} - example: "My-App-Name"
-    * parameters {object} - properties to initialize the instance
-        * syncUserDataProps {array} - list of which properties to sync in THREE.Object3D.userData  
-          (for example,  `syncUserDataProps = [ "gameState" ]` )
+    * parameters {object} - unused for now; reserved for future use
           
 **Properties**
 
