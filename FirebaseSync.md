@@ -7,7 +7,8 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 * FirebaseSync( firebaseRootUrl, appId, parameters ) -
     * firebaseRootUrl {string} - example: "https://your-firebase-root.firebaseio.com/"
     * appId {string} - example: "My-App-Name"
-    * parameters {object} - unused for now; reserved for future use
+    * (optional) parameters {object} - properties to configure the instance
+        * TRACE {boolean} - For debugging; if true, `console.log` Firebase events
           
 **Properties**
 
