@@ -17,6 +17,9 @@
 * MTL files must contain *only* the materials actually used, and must not link to broken or missing textures. **MAYA MAY EXPORT BAD MTL FILES BY DEFAULT**. If an object is not showing up, open the MTL file in a text editor and clean out any extra materials.
 
 ## Limitations of SDK
+* Cursor Events:
+    * The only way to interact with holograms currently is by clicking on them.
+    * Moving the mouse while holding down click turns the camera, so traditional "drag and drop" will not work.  (Instead, use "click" to initiate drag, then hologram follows mouse, then "click" again to end the drag. To see this in action, run the examples/chess.html which uses DragPlaneEffect plugin)
 * Sychronization:
     * Firebase has a latency on the order of 100 ms, so synchronizing fast-moving objects (like bullets) may not work smoothly.  
     * New objects cannot be added to FirebaseSync after the initial `connect()` operation.  (This limitation will be removed in a future version of the SDK).
