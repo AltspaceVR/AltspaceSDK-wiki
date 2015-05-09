@@ -46,9 +46,9 @@ You can name the above file index.html, MyFirstApp.html, or whatever you like. T
 Below we use a cube model, available in the AltspaceSDK repo `examples` directory. 
 ```sh
 $ mkdir MyFirstApp/models
-$ cp AltspaceSDK/examples/spinning_cube/cube.obj MyFirstApp/models/
-$ cp AltspaceSDK/examples/spinning_cube/cube.mtl MyFirstApp/models/
-$ cp AltspaceSDK/examples/spinning_cube/altspace-logo.jpg MyFirstApp/models/
+$ cp AltspaceSDK/examples/models/AltspaceCube/cube.obj MyFirstApp/models/
+$ cp AltspaceSDK/examples/models/AltspaceCube/cube.mtl MyFirstApp/models/
+$ cp AltspaceSDK/examples/models/AltspaceCube/altspace-logo.jpg MyFirstApp/models/
 $ ls MyFirstApp/models/
 altspace-logo.jpg
 cube.mtl
