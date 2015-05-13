@@ -21,18 +21,18 @@ FirebaseSync implements the concept of a **room**, so that multiple instances of
 
 **Methods**
 
-* addObject( object, key ) - register this object for synchronization
-    * object {[THREE.Object3D]} - sync position, rotation, and scale for this object
-    * key {string} - app-wide unique identifier for this object
-
-    Currently, `addObject` must be called on any objects in your scene that you want to sync *before* calling connect().
-
-* connect( onCompleteCallback ) - connect to Firebase and start listening for updates
-    * onCompleteCallback {function} - called when connection is initialized  
+* connect( onConnectedCallback, addObjectCallback, removeObjectCallback ) - connect to Firebase and start listening for updates.  
+    * (optional) onConnctedCallback {function} - called when connection is initialized
+    * (optional) addObjectCallback {function} - called when a new synced object is created by a remote client   
+    * (optional) removeObjectCallback {function} - called when a synced object is deleted by a remote client
     * Connect Handles these cases:
         * No roomID specified in URL: create room with random roomID and join it.
         * RoomID specified in URL, and room exists in DB: join it.
         * RoomID specified in URL, but room does not exists: create and join it.
+
+* addObject( object, key ) - register this object for synchronization.
+    * object {[THREE.Object3D]} - sync position, rotation, and scale for this object
+    * key {string} - app-wide unique identifier for this object
 
 * saveObject( object ) - save state of this object (broadcasts updates to all clients)
     * object {[THREE.Object3D]} - object to save (must `addObject` first)
