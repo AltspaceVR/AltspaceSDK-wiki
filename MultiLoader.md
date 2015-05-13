@@ -6,22 +6,9 @@ None. Instance created when script is imported (uses Javascript [Module Pattern]
 
 **Methods**
 
-* loadFilesInParallel( fileList, cb, optionalLoader ) - for loading many different objects. If optionalLoader is omitted, files are loaded with default loader and can be retrieved with 'getCache` below.
-    * fileList {array} - list containing one item (such as `fileParams` below) for each file
-    * cb {function} - called when all files are loaded
-    * (optional) optionalLoader {function} - function called for each item in fileList. Default is MultiLoader.loadModel, which uses `THREE.AltOBJMTLLoader`.
-
-* loadFilesInSeries( fileList, cb, optionalLoader ) - for loading many of the same object.   If optionalLoader is omitted, files are loaded with default loader and can be retrieved with 'getCache` below.
-    * same parameters as `loadFilesInParallel` above
-
-* loadModel( fileParams, cb ) - the default file loader, called for each file in fileList.
-    * fileParams {object} - object with two properties: fileName and cacheKey
-        * fileName {string} - path to the OBJ file, such as "/models/cube.obj"
-        * cacheKey {string} - id for this object, such as "cube-1", must be unique among all objects loaded by MultiLoader. Needed to differentiate between multiple objects loaded from same fileName. 
-    * cb {function} - called when all files finished loading
-
-* getCached( cacheKey ) - Retrieve the cached object. Returns null if item does not exist. 
-    * cacheKey {string} - object id, passes as parameter when it was initially loaded.
+* load (fileList, cb) - loads the assets as sepcified in the fileList. Will execute the specified callback with an object containing all the assets loaded.
+    * fileList {array} - array of objects containing the file to be loaded and a unique key. Example: {file: "path/to/file.obj", key: "some_identifier"}
+    * cb {function} called when the assets are finished loading. Will pass an argument which a dictionary (object) of the loaded assets (keyed by the key specified in the fileList).
 
 **Example**
 
