@@ -1,8 +1,8 @@
-* Support holding down mouse-click on hologram and moving mouse *without* turning the camera.
+* ~~Support holding down mouse-click on hologram and moving mouse *without* turning the camera.~~
 * Support for basic per-texel alpha on mesh when texture has alpha channel.
-* Ability to get current Altspace user's username.  (e.g. window.getAltspaceUser().username)
+* ~~Ability to get current Altspace user's username.  (e.g. window.getAltspaceUser().username)~~
 * Ability to create/render colored text in 3D space (with the option to billboard it to the user)
-* Ability to get current Altspace user's current headposition specified in "enclosure" coordinate space.
+* ~~Ability to get current Altspace user's current headposition specified in "enclosure" coordinate space.~~
 * Ability to create/render "beams" (two end points, a color and perhaps a width)
 * Ability to see more debug info from altspace (which objects are in the hierarchy, do they have anything displayed, what things are actually loaded).
 * Ability to hide an object after loading it (maybe by adding Object3D.visible to data serialized by AltRenderer)
