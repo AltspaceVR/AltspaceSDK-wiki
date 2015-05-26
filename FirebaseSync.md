@@ -2,7 +2,7 @@ Synchronizes the positions of objects across the network. If one user moves a ho
 
 FirebaseSync implements the concept of a **room**, so that multiple instances of your app can be running simultaneously, each with its own set of objects.  You can specify the “room=roomX” parameter in your app URL, where X is an integer, or if you omit it a new room will be created.
 
-Note that the `onConnectedCallback` will not be called until the connection to Firebase servers is made *and* any objects added via `addObject` have been synchronized.  This guarantees that any initial game objects or "game state" objects are initialized, useful "high score" or counting the number of times the app has been played in this room.
+Note that the `onConnectedCallback` will not be called until the connection to Firebase servers is made *and* any objects added via `addObject` have been synchronized.  This guarantees any initial game objects or "game state" objects are initialized, useful for "high score" or counting the number of times the app has been played in this room.
 
 **Constructor**
 
