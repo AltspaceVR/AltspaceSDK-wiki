@@ -4,7 +4,7 @@ Links to useful online resources.
 * in this SDK: [examples/models], [examples/sounds]
 * 3D Models: [TurboSquid], [TF3DM], [SketchFab]
 * 3D model format converter: [greentoken]
-* Audio Clips, Sound Effects: [FreeSound.org]
+* Audio Clips, Sound Effects: [FreeSound.org], [SoundDogs], [Recordist], [SoundJay]
 * Audio format converter: [online-convert]
 
 ### Three.js
@@ -49,6 +49,9 @@ Links to useful online resources.
 [greentoken]: http://www.greentoken.de/onlineconv/
 [online-convert]: http://www.online-convert.com/
 [FreeSound.org]: http://www.freesound.org/
+[SoundDogs]: http://www.sounddogs.com/
+[Recordist]: https://therecordist.com/
+[SoundJay]: http://www.soundjay.com/
 [TurboSquid]: http://www.turbosquid.com/
 [TF3DM]: http://tf3dm.com/
 [SketchFab]: https://sketchfab.com/models?features=downloadable
