@@ -10,7 +10,7 @@ Note that the `onConnectedCallback` will not be called until the connection to F
     * firebaseRootUrl {string} - example: "https://your-firebase-root.firebaseio.com/"
     * appId {string} - example: "MyAppName"
     * (optional) parameters {object} - properties to configure the instance
-        * authTokenPath {string} - example: "./tokens/MyAppName-token.txt"
+        * authTokenPath {string} - example: "./token.txt"
         * TRACE {boolean} - For debugging; if true, `console.log` Firebase events
           
 **Properties**
