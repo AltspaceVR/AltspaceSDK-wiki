@@ -8,8 +8,9 @@ Note that the `onConnectedCallback` will not be called until the connection to F
 
 * FirebaseSync( firebaseRootUrl, appId, parameters ) -
     * firebaseRootUrl {string} - example: "https://your-firebase-root.firebaseio.com/"
-    * appId {string} - example: "My-App-Name"
+    * appId {string} - example: "MyAppName"
     * (optional) parameters {object} - properties to configure the instance
+        * authTokenPath {string} - example: "./tokens/MyAppName-token.txt"
         * TRACE {boolean} - For debugging; if true, `console.log` Firebase events
           
 **Properties**
