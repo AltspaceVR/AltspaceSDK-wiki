@@ -10,7 +10,8 @@ Note that the `onConnectedCallback` will not be called until the connection to F
     * firebaseRootUrl {string} - example: "https://your-firebase-root.firebaseio.com/"
     * appId {string} - example: "MyAppName"
     * (optional) parameters {object} - properties to configure the instance
-        * authTokenPath {string} - example: "./token.txt"
+        * authToken {string} - content of a Firebase [custom authentication] token, passed to [authWithCustomToken]
+        * authTokenPath {string} - location of an authToken, example: "./token.txt"
         * TRACE {boolean} - For debugging; if true, `console.log` Firebase events
           
 **Properties**
@@ -49,3 +50,5 @@ Note that the `onConnectedCallback` will not be called until the connection to F
 * [src/sync/FirebaseSync.js](https://github.com/AltspaceVR/AltspaceSDK/blob/master/src/sync/FirebaseSync.js)
 
 [THREE.Object3D]: http://threejs.org/docs/#Reference/Core/Object3D
+[custom authentication]: https://www.firebase.com/docs/web/guide/login/custom.html
+[authWithCustomToken]: https://www.firebase.com/docs/web/api/firebase/authwithcustomtoken.html
