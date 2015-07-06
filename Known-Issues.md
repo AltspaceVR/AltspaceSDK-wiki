@@ -23,7 +23,6 @@
     * Moving the mouse while holding down click turns the camera, so traditional "drag and drop" will not work.  (Instead, use "click" to initiate drag, then hologram follows mouse, then "click" again to end the drag. To see this in action, run the examples/chess.html which uses DragPlaneEffect plugin)
 * Sychronization:
     * Firebase has a latency on the order of 100 ms, so synchronizing fast-moving objects (like bullets) may not work smoothly.  
-    * New objects cannot be added to FirebaseSync after the initial `connect()` operation.  (This limitation will be removed in a future version of the SDK).
 
 
 [1]: https://chromium.googlesource.com/chromiumos/manifest-versions/+/master/paladin/buildspecs/
