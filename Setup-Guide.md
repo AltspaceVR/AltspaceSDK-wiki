@@ -5,6 +5,7 @@
 2. After the program is running, switch AltspaceVR into windowed mode  
  OSX: Left Command + Left ALT + W  
  Win: Left CTRL + Left ALT + W  
+
 >On windows, if the window remains black, you may need to snap or resize it a couple times for an image to appear  
 
 ###Setup Coding Environment
@@ -13,8 +14,10 @@
 1. Drag your project folder into Sublime
 1. Download and run [Prepros]
 1. Drag your project folder into Prepros
+
 ###Test Example
 1. Copy the URL and paste it into the URL bar of the Apps panel in Altspace
+
 >Using the apps panel is recommended as it has the same dimensions as all the public enclosures in AltspaceVR so you do not need to currently worry about creating responsive holographic applications.
 
 
