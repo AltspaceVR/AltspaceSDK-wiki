@@ -20,10 +20,11 @@
 6. Drag your project folder into Prepros
 
 ###Test Example
-1. Hit preview in Prepros, copy the URL it opens
-1. Switch to AltspaceVR, open up the Apps panel, and paste it into the URL bar
+1. Hit preview in Prepros, navigate to an example, and copy the URL
+2. Switch to AltspaceVR, open up the Apps panel, and paste it into the URL bar
 
   >Using the Apps panel is recommended as it has the same dimensions as all the public enclosures in AltspaceVR so you do not need to currently worry about your holographic application needing to be responsive to changes in pixel dimension.
+3. Make a few modifications to the example in Sublime. Every time you save the file, your changes should immediately appear in AltspaceVR (this is via a LiveReload script added by Prepros).
 
 
 
