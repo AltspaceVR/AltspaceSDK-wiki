@@ -7,7 +7,7 @@ Table of Contents:
 * Technical Docs
     * [[SDK Reference]] - details of SDK components, with links to source code
     * [[Cursor Effect Plugins]] - easily add cursor interactions to your app objects
-    * [[Altspace Web Browser]] - intro to the custom browser that will run your apps
+    * [[AltspaceVR Web Browser]] - intro to the custom browser that will run your apps
 
 * Tutorials
     * [[Your First Altspace App]] - get up and running with ~20 lines of code
