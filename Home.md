@@ -10,10 +10,10 @@ Table of Contents:
     * [[Cursor Effect Plugins]] - easily add cursor interactions to your app objects
 
 * Tutorials
-    * [[Your First Altspace App]] - get up and running with ~20 lines of code
+    * [[Setup Guide]] - workflow and tools for building apps
+    * [[Your First Altspace App]] - get started with ~20 lines of code
 
 * Tips for Developers
-    * [[Workflow]] - suggesting development tools and best practices for building apps
     * [[Troubleshooting]] - tips for diagnosing issues that you may encounter
     * [[Resources]] - Links to online Three.js tutorials, 3D model libraries, and more.
     * [[Contributing]] - guidelines for contributing source code to this repository.
