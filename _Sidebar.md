@@ -9,7 +9,7 @@
     * [[Your First Altspace App]]
 
 * Tips for Developers
-    * [[Workflow]]
+    * [[Setup Guide]]
     * [[Troubleshooting]]
     * [[Resources]]
     * [[Contributing]]
