@@ -3,7 +3,7 @@
 * Technical Docs
     * [[SDK Reference]]
     * [[Cursor Effect Plugins]]
-    * [[Altspace Web Browser]]
+    * [[AltspaceVR Web Browser]]
 
 * Tutorials
     * [[Your First Altspace App]]
