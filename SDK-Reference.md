@@ -1,11 +1,7 @@
 Properties and methods of each component, including a link to the source code.
 
-* Core: 
-    * [[AltOBJMTLLoader]] - Creates objects from 3D model files (OBJ/MTL format)
-    * [[AltRenderer]] - Displays object (loaded with AltOBJMTLLoader) into Altspace.
-
 * Cursor: 
-    * [[CursorEvents]] - Registers objects for Altspace Cursor Events.
+    * [[CursorEvents]] - Registers objects for Altspace Cursor Events. Use if you plan to use Cursor Effects.
     * [[AltObjectControls]] - Handles mouse events in a traditional browser.
     * [[Cursor Effect Plugins]] - Adds pre-defined cursor interactions to objects.
 
