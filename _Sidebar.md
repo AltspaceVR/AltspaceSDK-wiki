@@ -16,8 +16,10 @@
 
 * Feedback
     * [[Known Issues]]
-    * [[Feature Requests]] 
+    * [Feature Requests] 
     * [[Wish List]]
     * [[Comments on Docs]]
 
 [[Home]]
+
+[Feature Requests]: http://answers.altvr.com/spaces/14/index.html
