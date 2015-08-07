@@ -16,8 +16,9 @@
 3. Drag your project folder into Sublime
 4. Move or snap Sublime to left side of your monitor  
  Win: <kbd>Windows</kbd> + <kbd>Left Arrow</kbd>
-5. Download and run [Prepros]
- >Developing from file:// is not recommended due to cross domain issues.
+5. Download and run [Prepros]  
+
+   >Developing from file:// is not recommended due to cross domain issues.
 6. Drag your project folder into Prepros
 
 ###Test Example
