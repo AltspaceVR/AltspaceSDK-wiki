@@ -105,3 +105,20 @@ firebaseSync.saveObject( cube );
 The new object state is now saved to the [Firebase](http://firebase.com) cloud and broadcast to any clients connected to this room.  FirebaseSync will update your objects when it receives broadcasts from other clients.
 
 Now this basic app is complete! For details, see the source code: [examples/spinning-cube.html].
+
+
+
+[AltOBJMTLLoader]: https://github.com/AltspaceVR/AltspaceSDK/wiki/AltOBJMTLLoader
+[AltRender]: https://github.com/AltspaceVR/AltspaceSDK/wiki/AltRenderer
+[CursorEvents]: https://github.com/AltspaceVR/AltspaceSDK/wiki/CursorEvents
+[ColorHighlightEffect]: https://github.com/AltspaceVR/AltspaceSDK/wiki/ColorHighlightEffect
+[DragPlaneEffect]: https://github.com/AltspaceVR/AltspaceSDK/wiki/DragPlaneEffect
+[FirebaseSync]: https://github.com/AltspaceVR/AltspaceSDK/wiki/FirebaseSync
+[Three.js]: http://https://github.com/mrdoob/three.js/
+[Workflow]: https://github.com/AltspaceVR/AltspaceSDK/wiki/Workflow
+[Cursor Effect Plugins]: https://github.com/AltspaceVR/AltspaceSDK/wiki/Cursor-Effect-Plugins
+[Prepros]: https://prepros.io/
+
+[examples/spinning-cube.html]: examples/spinning-cube.html
+[cube.obj]: examples/spinning_cube/cube.obj
+[cube.mtl]: examples/spinning_cube/cube.mtl
