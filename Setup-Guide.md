@@ -3,9 +3,10 @@
 ###Configure AltspaceVR
 1. Launch and login to AltspaceVR without an HMD connected
 2. After the program is running, switch AltspaceVR into windowed mode  
- OSX: Left Command + Left ALT + W
- Win: Left CTRL + Left ALT + W 
+ OSX: Left Command + Left ALT + W  
+ Win: Left CTRL + Left ALT + W  
 >On windows, if the window remains black, you may need to snap or resize it a couple times for an image to appear  
+
 ###Setup Coding Environment
 1. Checkout (or download and unzip) this repo to your project folder
 1. Download and run [Sublime Text]
