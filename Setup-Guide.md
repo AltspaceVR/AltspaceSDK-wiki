@@ -31,10 +31,10 @@ Every time you save the file, your changes should immediately appear in Altspace
 
 ###Test Debugger
 1. Download the Coherent Debugger, which is essentially a remote Chrome inspector for AltspaceVR.
- OSX: [OSX Debugger]
-
- > Note that you cannot rename it from Debugger.app after you extract it, or it won't run due to legacy .app bundle structure -- it needs an Info.plist with metadata.
+ OSX: [OSX Debugger]  
  Win: [Windows Debugger]
+
+ > On OSX: Note that you cannot rename it from Debugger.app after you extract it, or it won't run due to legacy .app bundle structure -- it needs an Info.plist with metadata.  
 2. Run the debugger and **click `GO`**
 3. Find your test example in the list
 
