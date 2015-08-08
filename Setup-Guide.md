@@ -30,7 +30,7 @@
 Every time you save the file, your changes should immediately appear in AltspaceVR (this is via a LiveReload script added by Prepros).
 
 ###Test Debugger
-1. Download the Coherent Debugger, which is essentially a remote Chrome inspector for AltspaceVR.
+1. Download the Coherent Debugger, which is essentially a remote Chrome inspector for AltspaceVR.  
  OSX: [OSX Debugger]  
  Win: [Windows Debugger]
 
