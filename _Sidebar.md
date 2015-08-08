@@ -15,7 +15,6 @@
     * [[Contributing]]
 
 * Feedback
-    * [[Known Issues]]
     * [Feature Requests] 
     * [[Comments on Docs]]
 
