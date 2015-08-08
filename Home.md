@@ -19,7 +19,6 @@ Table of Contents:
     * [[Contributing]] - guidelines for contributing source code to this repository.
 
 * Feedback
-    * [[Known Issues]] - Existing limitations. Check BEFORE creating new issues.
     * [Feature Requests] - What would make this excellent SDK *even better?*  
     * [[Comments on Docs]] - Did you find the info you needed on this wiki?
 
