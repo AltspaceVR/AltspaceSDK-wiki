@@ -1,4 +1,4 @@
-AltspaceVR is a multi-user social virtual reality application that runs natively on Windows and Mac. It has a **built-in web browser** that allows users to experience 2D and 3D web content while in a 3D virtual reality environment networked with other users.  Below you will learn more about the Altspace Web Browser (see also [[Known Issues]] page for current limitations), which is based on the Chromium web browser.
+AltspaceVR is a multi-user social virtual reality application that runs natively on Windows and Mac. It has a **built-in web browser** that allows users to experience 2D and 3D web content while in a 3D virtual reality environment networked with other users.  Below you will learn more about the Altspace Web Browser which is based on Chromium.
 
 ## Key Concepts
 
@@ -13,3 +13,13 @@ An **Altspace Web App** runs inside the AltspaceVR environment and utilizes APIs
 Altspace enclosures have `innerWidth`, `innerDepth`, and `innerHeight` dimensions in CSS pixels.  Changes to any of these attributes triggers an onResize event, which is effectively a resolution change.  Resolution can change independently from the scale of the composition, which is obtained via the enclosure property `pixelsToMeter` (meaning CSS pixels, which is not a screen pixel but a unit of measure).  **Scaling** is an Altspace browser operation that does not happen in traditional web browsers, since the physical size of the computer screen does not change.  Currently at scale 1, 1000 pixels is a meter.  An app will not know it's scale directly, only the `pixelsToMeter` ratio, which you can use to make a hologram the approximate size as an in-world object, such as the avatar's head or hand.   
 
 Your app can be in one of two states: **unsynced**, meaning only one person is seeing your app (like a traditional web page), or **synced**, meaning everyone is seeing the same initial url in the same place in the world.  However, everything beyond that (url changes, scrolling, events, etc) is a contract that the app needs to fulfill. We will be adding additional APIs in the future to make it easier for individual apps to fulfill this contract.
+
+**Known Browser Issues**
+* based on **Chromium 28** ([latest version][1] is 44 as of 4/14/2015)
+* new tabs / windows not supported
+* cannot print / download
+* 3D CSS not supported
+* Audio: no mp3 (unlike Chrome).  List of [Supported Media formats][2].
+    * Please try to use only webaudio, if you use flash we will be sad, and support may be dropped in the future.
+    * Your audio will sound like it is coming from the middle of your webpage.
+* Traditional DOM is only on a single 2D quad right now, cannot be put on 3d objects.
