@@ -4,6 +4,7 @@
     * [[SDK Reference]]
     * [[Cursor Effect Plugins]]
     * [[AltspaceVR Web Browser]]
+    * [[Renderer Versions]]
 
 * Tutorials
     * [[Setup Guide]]
