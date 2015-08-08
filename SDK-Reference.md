@@ -8,10 +8,6 @@ Properties and methods of each component, including a link to the source code.
 * Sync: 
     * [[FirebaseSync]] - Synchronizes object positions between multiple users.
 
-* Player Api's:
-    * [[UserApi]] - Get information about users in current space
-    * [[AvatarApi]] - Get information about where users are (position, rotation)
-
 * Helpers:
     * [[MultiLoader]] - Loads multiple OBJ/MTL files, sequentially or in parallel.
 
