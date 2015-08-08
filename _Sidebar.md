@@ -17,7 +17,6 @@
 * Feedback
     * [[Known Issues]]
     * [Feature Requests] 
-    * [[Wish List]]
     * [[Comments on Docs]]
 
 [[Home]]
