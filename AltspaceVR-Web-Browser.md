@@ -14,7 +14,8 @@ Altspace enclosures have `innerWidth`, `innerDepth`, and `innerHeight` dimension
 
 Your app can be in one of two states: **unsynced**, meaning only one person is seeing your app (like a traditional web page), or **synced**, meaning everyone is seeing the same initial url in the same place in the world.  However, everything beyond that (url changes, scrolling, events, etc) is a contract that the app needs to fulfill. We will be adding additional APIs in the future to make it easier for individual apps to fulfill this contract.
 
-**Known Browser Issues**
+## Browser Limitations
+
 * based on **Chromium 28** ([latest version][1] is 44 as of 4/14/2015)
 * new tabs / windows not supported
 * cannot print / download
