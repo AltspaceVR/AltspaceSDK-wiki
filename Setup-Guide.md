@@ -35,7 +35,7 @@ Every time you save the file, your changes should immediately appear in Altspace
  Win: [Windows Debugger]
 
  > OSX: Note that you cannot rename it from Debugger.app after you extract it, or it won't run due to legacy .app bundle structure -- it needs an Info.plist with metadata.  
-2. Run the debugger and **click `GO`**
+2. Run the debugger and click `GO`
 3. Find your test example in the list
 
 [OSX Debugger]: http://sdk.altvr.com/debugger/DebuggerMacOSX.zip
