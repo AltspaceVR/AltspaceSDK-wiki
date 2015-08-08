@@ -21,7 +21,6 @@ Table of Contents:
 * Feedback
     * [[Known Issues]] - Existing limitations. Check BEFORE creating new issues.
     * [Feature Requests] - What would make this excellent SDK *even better?*  
-    * [[Wish List]] - For longer-term roadmap suggestions or big-picture topics.
     * [[Comments on Docs]] - Did you find the info you needed on this wiki?
 
 [Repo README]: https://github.com/AltspaceVR/AltspaceSDK
