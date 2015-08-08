@@ -8,7 +8,7 @@
 3. Move or snap the window to right side of your monitor  
  Win: <kbd>Windows</kbd> + <kbd>Right Arrow</kbd>
 
-  >On windows, if the window remains black, you may need to snap or resize it a couple times for an image to appear  
+  >Windows: If the window remains black, you may need to snap or resize it a couple times for an image to appear  
 
 ###Setup Coding Environment
 1. Checkout (or download and unzip) this repo to your project folder
@@ -34,7 +34,7 @@ Every time you save the file, your changes should immediately appear in Altspace
  OSX: [OSX Debugger]  
  Win: [Windows Debugger]
 
- > On OSX: Note that you cannot rename it from Debugger.app after you extract it, or it won't run due to legacy .app bundle structure -- it needs an Info.plist with metadata.  
+ > OSX: Note that you cannot rename it from Debugger.app after you extract it, or it won't run due to legacy .app bundle structure -- it needs an Info.plist with metadata.  
 2. Run the debugger and **click `GO`**
 3. Find your test example in the list
 
