@@ -2,7 +2,7 @@ Links to useful online resources.
 
 ### Models, Sounds, etc.
 * in this SDK: [examples/models], [examples/sounds]
-* 3D Models: [TurboSquid], [TF3DM], [SketchFab]
+* 3D Models: [TurboSquid], [OpenGameArt], [SketchFab]
 * 3D model format converter: [greentoken]
 * Audio Clips, Sound Effects: [FreeSound.org], [SoundDogs], [Recordist], [SoundJay]
 * Audio format converter: [online-convert]
@@ -51,7 +51,7 @@ Links to useful online resources.
 [Recordist]: https://therecordist.com/
 [SoundJay]: http://www.soundjay.com/
 [TurboSquid]: http://www.turbosquid.com/
-[TF3DM]: http://tf3dm.com/
+[OpenGameArt]: http://opengameart.org/
 [SketchFab]: https://sketchfab.com/models?features=downloadable
 
 [VoodooJS]: http://www.voodoojs.com/
