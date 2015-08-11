@@ -22,8 +22,6 @@ Links to useful online resources.
 
 ### Related Work / Cool Stuff
 * [WebGameLinks] - Things that are/could be cool in AltspaceVR
-* [VoodooJS] - JS framework for mixing 2D and 3D content.
-* [SceneVR] - Create Virtual Reality scenes with markup + Javascript.
 
 [REFERENCE-STYLE LINK DEFINITIONS FOLLOW]:dummylink
 [examples/models]: https://github.com/AltspaceVR/AltspaceSDK/tree/master/examples/models
