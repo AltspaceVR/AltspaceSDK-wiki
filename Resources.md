@@ -52,7 +52,7 @@ Links to useful online resources.
 [SoundJay]: http://www.soundjay.com/
 [TurboSquid]: http://www.turbosquid.com/
 [OpenGameArt]: http://opengameart.org/
-[SketchFab]: https://sketchfab.com/models?features=downloadable
+[SketchFab]: https://sketchfab.com/models?date=week&features=downloadable&polygons=10k&sort_by=-likeCount&page=2
 
 [VoodooJS]: http://www.voodoojs.com/
 [SceneVR]: http://www.scenevr.com/
