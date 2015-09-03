@@ -28,7 +28,6 @@ Since AltspaceVR uses unlit environments, you are still limited to
 MeshBasicMaterial however, the new renderer also supports material `color` and 
 visibility, via the `visible` property. 
 
-
 ## Caveats and unsupported features
 
 Renderer 0.2.0 is still in development so there are known bugs at the time of
@@ -49,3 +48,16 @@ and meshes at the time of this writing, such as:
 - Dynamic textures
 - Dynamic geometry
 - Animated SkinnedMeshes
+
+## Examples
+
+Here are some examples that demonstrate the new renderer. Note that these 
+examples are in flux and will be updated in the coming weeks but they should
+give you a good starting point in their current state.
+
+- Spinning Cube, the simplest example:
+  - http://git.io/vGQml
+- Hello World, shows support for Three.js geometries
+  - http://git.io/vGQYz
+- Bubbling, shows object heirarchies and cursor events
+  - http://git.io/vGQm5
