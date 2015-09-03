@@ -2,17 +2,6 @@ This article helps you transition from our legacy renderer 0.1.0 to our new
 0.2.0 renderer. The new renderer will soon become the default for AltspaceVR 
 apps.
 
-## Instantiating the renderer
-
-Regardless of which version you are using, you should be instantiating the
-renderer via the `altspace.getThreeJSRenderer()` method. At the time of this
-writing (Sept 9th), the `getThreeJSRenderer` method returns renderer 
-0.1.0 by default, if you do not specify a version. However, it is recommended
-that you explicitly specify a version because the default _will_ change in 
-the coming weeks. Simply use an options argument to specify a version:
-
-    altspace.getThreeJSRenderer({version: '0.2.0'});
-
 ## What's new in 0.2.0
 
 Renderer 0.1.0 restricted you to OBJ/MTL files, which you _had_ to load through
@@ -27,6 +16,21 @@ OBJMTLLoader, ColladaLoader, DDSLoader, STLLoader, etc, including animations.
 Since AltspaceVR uses unlit environments, you are still limited to 
 MeshBasicMaterial however, the new renderer also supports material `color` and 
 visibility, via the `visible` property. 
+
+## Switching to Renderer 0.2.0
+
+Regardless of which version you are using, you should be instantiating the
+renderer via the `altspace.getThreeJSRenderer()` method. At the time of this
+writing (Sept 9th), the `getThreeJSRenderer` method returns renderer 
+0.1.0 by default, if you do not specify a version. However, it is recommended
+that you explicitly specify a version because the default _will_ change in 
+the coming weeks. Simply use an options argument to specify a version:
+
+    altspace.getThreeJSRenderer({version: '0.2.0'});
+
+Use THREE.OBJMTLLoader instead of AltOBJMTLLoader. The loaders have similar
+APIs and behaviors, except that OBJMTLLoader takes two URL arguments - 
+A URL argument for the OBJ file _and_ another URL argument for the MTL file.
 
 ## Caveats and unsupported features
 
