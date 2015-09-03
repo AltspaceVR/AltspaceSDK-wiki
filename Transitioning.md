@@ -11,7 +11,7 @@ writing (Sept 9th), the `getThreeJSRenderer` method returns renderer
 that you explicitly specify a version because the default _will_ change in 
 the coming weeks. Simply use an options argument to specify a version:
 
-    altspace.getThreeJSRenderer({version: '0.1.0'});
+    altspace.getThreeJSRenderer({version: '0.2.0'});
 
 ## What's new in 0.2.0
 
