@@ -6,7 +6,7 @@ apps.
 
 Regardless of which version you are using, you should be instantiating the
 renderer via the `altspace.getThreeJSRenderer()` method. At the time of this
-writing (Sept 9th), the `getThreeJSRenderer` method will return renderer 
+writing (Sept 9th), the `getThreeJSRenderer` method returns renderer 
 0.1.0 by default, if you do not specify a version. However, it is recommended
 that you explicitly specify a version because the default _will_ change in 
 the coming weeks. Simply use an options argument to specify a version:
