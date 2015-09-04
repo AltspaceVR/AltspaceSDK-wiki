@@ -49,8 +49,10 @@ and meshes at the time of this writing, such as:
 - Material transparency
 - MeshBasicMaterial alphaMap
 - MeshBasicMaterial wireframe
+- Complex materials suchs as MeshFaceMaterial
 - Dynamic textures
 - Dynamic geometry
+- BufferGeometry
 - Animated SkinnedMeshes
 
 ## Examples
