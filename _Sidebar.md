@@ -1,16 +1,12 @@
 **AltspaceSDK Wiki**
 
-* Technical Docs
-    * [[Cursor Effect Plugins]]
-    * [[AltspaceVR Web Browser]]
-
 * Tutorials
     * [[Setup Guide]]
 
 * Tips for Developers
+    * [[AltspaceVR Web Browser]]
     * [[Troubleshooting]]
     * [[Resources]]
-    * [[Contributing]]
 
 * Feedback
     * [Feature Requests] 
