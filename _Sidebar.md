@@ -1,14 +1,10 @@
 **AltspaceSDK Wiki**
 * [[Changelog]]
-* Tutorials
-    * [[Setup Guide]]
-
-* Tips for Developers
-    * [[AltspaceVR Web Browser]]
-    * [[Troubleshooting]]
-    * [[Resources]]
-
-* Feedback
-    * [Feature Requests] 
+* [[Setup Guide]]
+* [[AltspaceVR Web Browser]]
+* [[Troubleshooting]]
+* [[Resources]]
+* [[SDK CDN]]
+* [Feature Requests] 
 
 [Feature Requests]: http://answers.altvr.com/spaces/14/index.html
