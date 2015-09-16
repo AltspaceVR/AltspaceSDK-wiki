@@ -1,5 +1,5 @@
 **AltspaceSDK Wiki**
-* [[Change Log]]
+* [[Changelog]]
 * Tutorials
     * [[Setup Guide]]
 
