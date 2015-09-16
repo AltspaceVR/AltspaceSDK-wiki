@@ -1,3 +1,5 @@
+#DEPRECIATED
+
 Cursor Effect Plugins may be used with the [[CursorEvents]] manager.  Just "plugin" the effects below to add interactive behaviors to your app objects.  Since you only need to create the instance, than add it to an object using `CursorEvents.addEffect` in most cases only the constructors are listed below.
 
 ### ColorHighlightEffect
