@@ -1,4 +1,4 @@
->_We find this the easiest way to develop VR web apps for AltspaceVR, but feel free to substitute other tools or experiment with developing in VR mode. You can also skip the AltspaceVR step if you would rather develop using WebGL in a traditional web browser._
+>_We find this the easiest way to locally develop VR web apps for AltspaceVR, but feel free to substitute other tools or experiment with developing in VR mode. You can also skip the AltspaceVR step if you would rather develop using WebGL in a traditional web browser._
 
 ###Configure AltspaceVR
 1. Launch and login to AltspaceVR without an HMD connected
