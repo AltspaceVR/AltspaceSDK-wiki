@@ -11,6 +11,4 @@
 * Feedback
     * [Feature Requests] 
 
-[[Home]]
-
 [Feature Requests]: http://answers.altvr.com/spaces/14/index.html
