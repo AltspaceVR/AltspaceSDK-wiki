@@ -1,3 +1,34 @@
+0.3.0
+---
+- Improved Renderer
+  - Improved performance for loading static textures
+  - Renderer can now report back debug info about the scene (getThreeJSDebugInfo)
+  - Improved support for various model formats (Collada, FBX)
+  - Support for Three.js r72 and r73
+  - Significant performance improvements for large scenes and scene updates
+- [New Documentation Site](http://altspacevr.github.io/AltspaceSDK/doc/)
+- Added Behavior System
+  - Create scripts that have Awake, Start, and Update functions similar to modern game engines.
+  - Enables better code sharing and reuse between projects
+- Added Behaviors
+  - SceneSync & Object3DSync
+    - Instantiate, destroy, and update Object3Ds in your scene
+    - Can use with altspace.utilities.sync in place of FirebaseSync
+  - Layout
+    - Easily position objects relative to the enclosure bounds or the bounds of other objects
+- Added Simulation Utility
+  - Easily setup a three.js app with AltspaceVR and behavior support
+  - If you keep all of your update code in behaviors, you do not need to use additional intervals or requestAnimationFrame
+- Added Examples
+  - Living Room - Layout behavior
+  - Spawning Cubes - SceneSync behavior
+- Reorganized Repository
+  - Full source and build scripts for altspace.js
+  - Core API tests (only runnable in the AltspaceVR browser)
+- Upgraded to ES6 (ES2015)
+  - We have upgraded a number of our source files to use ES6 and are using Babel for compilation
+  - Use of ES6 is not required, but if you would like to do so feel free to use our (or your own) gulp system or switch your code pen to use Babel
+
 0.2.3
 ---
 - Resolved issue with pixelsPerMeter returning inconsistent values  
