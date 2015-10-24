@@ -1,5 +1,4 @@
 **AltspaceSDK Wiki**
-* [[Changelog]]
 * [[Setup Guide]]
 * [[AltspaceVR Web Browser]]
 * [[Troubleshooting]]
