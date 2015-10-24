@@ -28,6 +28,7 @@
 - Upgraded to ES6 (ES2015)
   - We have upgraded a number of our source files to use ES6 and are using Babel for compilation
   - Use of ES6 is not required, but if you would like to do so feel free to use our (or your own) gulp system or switch your code pen to use Babel
+- Added Source Maps to altspace.js  
 
 0.2.3
 ---
