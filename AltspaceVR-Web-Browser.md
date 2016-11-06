@@ -16,11 +16,11 @@ Your app can be in one of two states: **unsynced**, meaning only one person is s
 
 ## Browser Limitations
 
-* based on **Chromium 28** ([latest version][1] is 44 as of 4/14/2015)
+* based on **Chromium 40**
 * new tabs / windows not supported
 * cannot print / download
 * 3D CSS not supported
 * Audio: no mp3 (unlike Chrome).  List of [Supported Media formats][2].
-    * Please try to use only webaudio, if you use flash we will be sad, and support may be dropped in the future.
+    * Please try to use only webaudio.
     * Your audio will sound like it is coming from the middle of your webpage.
 * Traditional DOM is only on a single 2D quad right now, cannot be put on 3d objects.
