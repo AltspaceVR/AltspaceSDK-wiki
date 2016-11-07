@@ -4,3 +4,4 @@
 * [[AltspaceVR Web Browser]]
 * [[Troubleshooting]]
 * [[Resources]]
+* [[Commands]]
