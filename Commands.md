@@ -1,4 +1,4 @@
-# Commands for the Altspace In-Game Command Interpreter
+# Commands for the Altspace In-Game Command Console
 Command names are case insensitive.
 
 ### help
