@@ -4,8 +4,8 @@ Headscratching?
 Here are some things that might help
 
 1. A-Frame ignores components with names containing a capital letter.
-It's true, if you give your a-frame component a name containing a capital letter a-frame won't load it, or give you any error. (A-Frame 0.3.0)
-So 'myNewComponent' won't work. Use hyphens to separate words instead e.g. 'my-new-component'
+It's true, if you give your a-frame component a name containing a capital letter a-frame won't load it, or give you any error (A-Frame 0.3.0).
+So 'myNewComponent' won't work. Use hyphens to separate words instead e.g. 'my-new-component'.
 
 2. Weird property values in A-Frame. If you are writing an a-frame component and referring to object3Ds belonging to other elements within the 'init' method,
 you may find that properties of the referred to object don't have the values you expect (position for instance). This is because
