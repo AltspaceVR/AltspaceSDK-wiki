@@ -1,2 +1,2 @@
 [[Home]]
-Copyright (c) 2015 AltspaceVR
+Copyright (c) 2017 AltspaceVR
