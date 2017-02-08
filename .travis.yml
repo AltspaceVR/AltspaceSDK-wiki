@@ -7,9 +7,8 @@ script:
   git remote add upstream https://$GITHUB_API_KEY@github.com/AltspaceVR/AltspaceSDK.wiki.git > /dev/null 2>&1
   git fetch origin
   git fetch upstream
-  git merge upstream/master --no-edit
-  if [ $(git rev-parse origin/master) != $(git rev-parse upstream/master) ]
-  then git push upstream origin/master:master > /dev/null 2>&1
+  if [ $(git rev-parse origin/master) != $(git rev-parse upstream/master) ] then
+  git push upstream origin/master:master > /dev/null 2>&1
   fi
 env:
   matrix:
