@@ -22,3 +22,5 @@ you can listen and run your dependent code:
 3. Beware of setting angles in degrees. APIs generally assume radians (is this true)?
 
 4. N-sound components do not work when 'volume' property is set.
+
+5. Creating > 1 AudioContext in javascript will cause the page to freeze. You should only need one anyway, just make sure you aren't creating more in error (or temporarily).
