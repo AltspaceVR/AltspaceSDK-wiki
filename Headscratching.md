@@ -23,4 +23,4 @@ you can listen and run your dependent code:
 
 4. N-sound components do not work when 'volume' property is set.
 
-5. Creating > 1 AudioContext in javascript will cause the page to freeze. You should only need one anyway, just make sure you aren't creating more in error (or temporarily).
+5. Creating > 1 AudioContext in javascript will cause the client to freeze. You should only need one anyway, just make sure you aren't creating more in error (or temporarily).

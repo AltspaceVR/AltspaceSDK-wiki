@@ -25,6 +25,7 @@ If you're looking to make more complicated edits spanning multiple files and mul
 commits, you'll need to follow the full [GitHub flow](https://help.github.com/articles/github-flow/), which involves downloading
 the source to your computer, making your changes, uploading them, then filing the
 pull request.
+
 Pages are formatted using markdown. If you are not familiar with the syntax take a look at this GitHub Guide:
 https://guides.github.com/features/mastering-markdown/
 
