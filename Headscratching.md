@@ -19,7 +19,6 @@ if (target.hasLoaded) {
     target.addEventListener('loaded', doThis);
 }
 ```
-
 3. Beware of setting angles in degrees. APIs generally assume radians (is this true)?
 
 4. N-sound components do not work when 'volume' property is set.
