@@ -1,5 +1,4 @@
-How to contribute to this wiki
-===============================
+# How to contribute to this wiki
 
 The SDK team here at AltspaceVR is always going to be small compared to the developer
 community, so we welcome anyone's efforts to build on the documentation, and make
