@@ -12,6 +12,7 @@ Links to useful online resources.
 * Tutorials
     * [Official Three.js Docs], [Official Three.js Wiki]
     * Guides by [Aerotwist], [japhr], and [johnnes-raida]
+    * [[Baked Lighting Tutorial|Baked-Lighting]]
 * Instructive Examples
     * [Official Three.js Examples]
     * Examples by [ProfStemkoski] and [jos.dirksen]
