@@ -23,6 +23,7 @@ Like regular HTML, A-Frame entities load depth-first, top to bottom. Components 
 
 The a-scene and all other a-frame elements emit a 'loaded' event to which
 you can listen and run your dependent code:
+
     ```javascript
     var target = document.querySelector('#target');
     if (target.hasLoaded) {
