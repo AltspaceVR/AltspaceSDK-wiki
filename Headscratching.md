@@ -10,16 +10,13 @@ So 'myNewComponent' won't work; use hyphens to separate words instead e.g. 'my-n
 2. Weird property values in A-Frame. If you are writing an a-frame component and referring to object3Ds belonging to other elements within the 'init' method,
 you may find that properties of the referred to object don't have the values you expect (position for instance). This is because
 these other objects have not completed initialisation yet.
-
 Like regular HTML, A-Frame entities load depth-first, top to bottom. Components load left to right in a single entity.
-
     <a-entity id='one'> // loads once all its children are loaded
         <a-entity id='two'> // loads once all its children are loaded
             <a-entity id='three'> // loads first
             </a-entity>
         </a-entity>
     </a-entity>
-
 The a-scene and all other a-frame elements emit a 'loaded' event to which
 you can listen and run your dependent code:
     ```javascript
