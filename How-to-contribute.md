@@ -16,7 +16,7 @@ in the next step.
 ## 2. Make your changes
 
 If you only want to edit a single file, you can do it right from the GitHub interface.
-Just follow the steps in GitHub's guide to [editing files in another user's repository](https://help.github.com/articles/editing-files-in-another-user-s-repository/). 
+Just follow the steps in GitHub's guide to [editing files in another user's repository](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
 
 If you're looking to make more complicated edits spanning multiple files and multiple
 commits, you'll need to follow the full [GitHub flow](https://help.github.com/articles/github-flow/), which involves downloading
