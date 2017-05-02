@@ -24,14 +24,12 @@ Like regular HTML, A-Frame entities load depth-first, top to bottom. Components 
 The a-scene and all other a-frame elements emit a 'loaded' event to which
 you can listen and run your dependent code:
 
-    ```javascript
     var target = document.querySelector('#target');
     if (target.hasLoaded) {
         doThis();
     } else {
         target.addEventListener('loaded', doThis);
     }
-    ```
 
 3. Beware of setting angles in degrees. Three.js uses radians for everything, but A-Frame uses degrees. So rotation='0 180 0', but this.object3D.rotation.set(0, Math.PI, 0).
 
