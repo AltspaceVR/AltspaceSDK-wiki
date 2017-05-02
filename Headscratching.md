@@ -30,6 +30,7 @@ you can listen and run your dependent code:
         target.addEventListener('loaded', doThis);
     }
     ```
+
 3. Beware of setting angles in degrees. Three.js uses radians for everything, but A-Frame uses degrees. So rotation='0 180 0', but this.object3D.rotation.set(0, Math.PI, 0).
 
 4. N-sound components do not work when 'volume' property is set.
