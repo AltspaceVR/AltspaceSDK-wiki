@@ -1,4 +1,3 @@
-# Object Count
 App performance can be affected by the number of objects in your scene.
 Animated objects are certainly more expensive but event static objects require processing on every frame.
 
