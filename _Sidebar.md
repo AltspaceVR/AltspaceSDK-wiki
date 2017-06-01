@@ -1,5 +1,4 @@
-**AltspaceSDK Wiki**
-* [[Setup Guide]]
+# AltspaceSDK Wiki
 * [[Hosting Your App]]
 * [[AltspaceVR Web Browser]]
 * [[Troubleshooting]]
