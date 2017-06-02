@@ -8,3 +8,5 @@ Use texture atlasing with texture offsets where possible.
 This would allow you to use a single textureto represent different objects.
 
 Use lightmaps instead of baking lighting onto the texture map.
+
+Note: The texture count represents all the textures you have ever renderered into the scene, even if you stop using the texture later in the app's lifetime.
