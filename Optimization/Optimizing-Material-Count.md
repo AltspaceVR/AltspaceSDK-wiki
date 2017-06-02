@@ -5,3 +5,5 @@ In some instances, material re-use can lead to further optimizations thanks to r
 material are 
 Use texture atlasing with texture offsets where possible. 
 This would allow you to use a single material to represent different objects.
+
+Note: The material count represents all the materials you have ever renderered into the scene, even if you stop using the material later in the app's lifetime.
