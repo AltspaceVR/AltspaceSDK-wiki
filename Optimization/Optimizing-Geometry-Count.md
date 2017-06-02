@@ -4,3 +4,5 @@ Avoid cloning or duplicating geometries if they share content and properties tha
 In some instances, geometry re-use can lead to further optimizations thanks to render batching, where objects with the same texture are rendered in a single draw call.
 
 Merge individual geometries if possible.
+
+Note: The geometry count represents all the geometries you have ever renderered into the scene, even if you stop using the geometry later in the app's lifetime.
