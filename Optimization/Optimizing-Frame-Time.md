@@ -7,4 +7,4 @@ Note that frame time includes time spent by Altspace itself.
 Increased frame time mostly depends on the number of objects in your scene and how many of those objects are being updated continuously. If you're animating many objects or adding/removing many objects in your scene, frame time will be affected.
 
 ## Optimizations
-Try to reduce the number of objects in your scene or the number of objects changes.
+Try to reduce the number of objects in your scene or the number of object changes.
