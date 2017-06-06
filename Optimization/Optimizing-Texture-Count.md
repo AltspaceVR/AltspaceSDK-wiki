@@ -14,7 +14,7 @@ In some instances, texture re-use can lead to further optimizations thanks to re
 texture are rendered in a single draw call.
 
 Use texture atlasing with texture offsets where possible. 
-This would allow you to use a single textureto represent different objects.
+This would allow you to use a single texture to represent different objects.
 
 Use lightmaps instead of baking lighting onto the texture map.
 
