@@ -1,5 +1,5 @@
 ## Description
-Geometry Count is the number of individual geometries rendered by your app. Geometry instances lead to additional draw calls when rendering your app. 
+Geometry Count is the number of individual mesh geometries rendered by your app. Geometry instances lead to additional draw calls when rendering your app. 
 
 Rendering a large number of geometries can also cause poor load-time performance.
 
@@ -9,7 +9,8 @@ Rendering a large number of geometries can also cause poor load-time performance
 High Geometry Count can be caused by poor re-use of geometries or if your app is continuously adding new geometries to the scene.
 
 ## Optimization
-Re-use geometry instances as much as possible. Avoid cloning or duplicating geometries if they contain identical content.
+Re-use geometry instances as much as possible. Avoid cloning or duplicating geometries if they contain identical content. Mesh cloning will not duplicate the geometry. Either do this or manually reuse the same geometry reference for objects that should use the same geometry.
+
 If your app has many small geometries, merge them into a single, large geometry if possible.
 
 In some instances, geometry re-use can lead to further optimizations thanks to render batching, where objects with the same geometry are rendered in a single draw call.
