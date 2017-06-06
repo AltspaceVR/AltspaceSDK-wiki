@@ -9,7 +9,7 @@ Rendering a large number of geometries can also cause poor load-time performance
 High Geometry Count can be caused by poor re-use of geometries or if your app is continuously adding new geometries to the scene.
 
 ## Optimization
-Re-use geometry instances as much as possible. Avoid cloning or duplicating geometries if they contain identical content. For different objects that should use the same geometry, either use mesh cloning (this will not duplicate the geometry), or manually reuse the geometry reference.
+Re-use geometry instances as much as possible. Avoid cloning or duplicating geometries if they contain identical content. Mesh cloning will not duplicate the geometry.
 
 If your app has many small geometries, merge them into a single, large geometry if possible.
 
