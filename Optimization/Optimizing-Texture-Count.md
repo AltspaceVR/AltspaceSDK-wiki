@@ -13,7 +13,7 @@ Re-use texture instances as much as possible. Avoid cloning or duplicating textu
 In some instances, texture re-use can lead to further optimizations thanks to render batching, where objects with the same 
 texture are rendered in a single draw call.
 
-Use (https://en.wikipedia.org/wiki/Texture_atlas)[texture atlasing] with texture offsets where possible. 
+Use (texture atlasing)[https://en.wikipedia.org/wiki/Texture_atlas] with texture offsets where possible. 
 This would allow you to use a single texture to represent different objects.
 
 Use lightmaps instead of baking lighting onto the texture map.
