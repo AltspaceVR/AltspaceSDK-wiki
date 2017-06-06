@@ -1,5 +1,5 @@
 ## Description
-Frame Time measures how long, in milliseconds, it takes to process a single frame. This serves as an overall measure of your app's runtime performance. Frame Time is the inverse of FPS (frames per second).
+Frame Time measures how long, in milliseconds, it takes to process a single frame. This serves as an overall indicator of your app's runtime performance. Frame Time is the inverse of FPS (frames per second).
 Desktop PCs usually perform very well in this aspect, so this statistic is particularly useful on mobile devices.  
 
 > Frame Time includes time spent by Altspace itself. 
