@@ -3,7 +3,7 @@ Geometry Count is the number of individual mesh geometries rendered by your app.
 
 Rendering a large number of geometries can also cause poor load-time performance.
 
-> Geometry Count represents all the geometries you have ever renderered into the scene, even if you stop using the geometry later in the app's lifetime.
+> Geometry Count currently represents all the geometries you have ever renderered into the scene, even if you stop using the geometry later in the app's lifetime.
 
 ## Causes
 High Geometry Count can be caused by poor re-use of geometries or if your app is continuously adding new geometries to the scene.
